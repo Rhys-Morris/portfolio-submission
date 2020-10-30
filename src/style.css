@@ -194,11 +194,25 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
 }
-.about__blog__header {
-  padding: 2rem;
-  background-color: #bee6ff;
-  color: #040721;
+.about__blog__text {
+  font-size: 1.8rem;
   margin-bottom: 3rem;
+}
+.about__blog__header {
+  text-align: center;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  color: #040721;
+  background-color: #7accff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.about__blog__link {
+  text-decoration: none;
+  color: #7accff;
+}
+.about__blog__link:hover {
+  color: #bee6ff;
 }
 
 @keyframes dropdown {
@@ -280,6 +294,10 @@ font-family: 'Roboto Mono', monospace;
     transform: scale3d(1, 1, 1);
   }
 }
+.blog__post__header {
+  margin-top: 20vh;
+}
+
 .socials {
   display: flex;
   flex-direction: column;
@@ -562,10 +580,16 @@ font-family: 'Roboto Mono', monospace;
 }
 .slideshow-container__post__header {
   position: absolute;
+  color: #bee6ff;
   font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
   top: 2rem;
   left: 2rem;
   text-transform: uppercase;
+  transition: 0.2s all;
+}
+.slideshow-container__post__header:visited, .slideshow-container__post__header:active {
+  color: #bee6ff;
 }
 
 .scroll {
@@ -584,31 +608,38 @@ font-family: 'Roboto Mono', monospace;
   transition: 1s all ease-out;
 }
 
+.header--1 {
+  visibility: visible;
+}
+
+.header--2,
+.header--3,
+.header--4,
+.header--5 {
+  visibility: hidden;
+}
+
 .post--1 {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("../src/img/pankaj-patel-u2Ru4QBXA5Q-unsplash (1).jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-bootstrap-small.jpg");
 }
 
 .post--2 {
-  background-color: orange;
-  display: none;
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-react-small.jpg");
   flex: 0;
 }
 
 .post--3 {
-  background-color: yellow;
-  display: none;
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-animation-small.jpg");
   flex: 0;
 }
 
 .post--4 {
-  background-color: green;
-  display: none;
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-resume-small.jpg");
   flex: 0;
 }
 
 .post--5 {
-  background-color: blue;
-  display: none;
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-interview-small.jpg");
   flex: 0;
 }
 
@@ -626,6 +657,11 @@ font-family: 'Roboto Mono', monospace;
   border-radius: 50%;
   border: 3px solid #bee6ff;
   cursor: pointer;
+}
+
+.slideshow-info {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contact {

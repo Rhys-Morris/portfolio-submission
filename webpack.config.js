@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/scripts/index.js",
     output: {
-        filename: "main.js",
-        path: path.join(__dirname, "dist")
+        filename: "main.min.js",
+        path: path.join(__dirname, "src")
     },
     module: {
         rules: [
