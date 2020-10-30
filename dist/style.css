@@ -775,6 +775,12 @@ font-family: 'Roboto Mono', monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 80%;
+}
+@media only screen and (max-width: 500px) {
+  .work {
+    width: 90%;
+  }
 }
 .work__header {
   align-self: flex-start;
@@ -789,6 +795,11 @@ font-family: 'Roboto Mono', monospace;
   background-color: #bee6ff;
   color: #040721;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 500px) {
+  .work__sub-header {
+    font-size: 1.6rem;
+  }
 }
 .work__languages {
   display: flex;
@@ -819,14 +830,10 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 500px) {
   .work__languages {
-    width: 100vw;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .work__languages {
+    width: 90vw;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
-    row-gap: 2rem;
+    row-gap: 4rem;
   }
 }
 .work__languages__header {
@@ -852,12 +859,13 @@ font-family: 'Roboto Mono', monospace;
 .work__projects__project {
   display: flex;
   flex-direction: column;
-  width: 55rem;
+  width: 40rem;
   height: 30rem;
   background-position: center;
   background-size: cover;
   border-radius: 0.5rem;
   position: relative;
+  margin: 1rem;
   transition: 2s all;
 }
 .work__projects__project--1 {
@@ -865,14 +873,26 @@ font-family: 'Roboto Mono', monospace;
   transition: 2s all;
 }
 .work__projects__project--1:hover {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0), rgba(4, 7, 33, 0)), url("../src/img/todoproject.png");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0)), url("../src/img/todoproject.png");
   border: none;
 }
 .work__projects__project--2 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/connect4project.PNG");
 }
 .work__projects__project--2:hover {
-  background-image: url("../src/img/connect4project.PNG");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0)), url("../src/img/connect4project.PNG");
+}
+.work__projects__project--3 {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/tictactoe.PNG");
+}
+.work__projects__project--3:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0)), url("../src/img/tictactoe.PNG");
+}
+.work__projects__project--4 {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/calculator.PNG");
+}
+.work__projects__project--4:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0)), url("../src/img/calculator.PNG");
 }
 .work__projects__header {
   padding: 2rem;
