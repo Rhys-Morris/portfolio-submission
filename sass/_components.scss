@@ -76,7 +76,7 @@
 
     @media only screen and (max-width: $breakpoint9) {
         bottom: 0;
-    } 
+    }
 }
 
 .frame::after {
@@ -254,7 +254,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-// Hamburger icon
+// HAMBURGER ICON
 
 .hamburger-div {
     display: none;
@@ -289,7 +289,7 @@
     transition: .3s all;
 }
 
-// Hamburger openend
+// HAMBURGER STYLE WHEN OPENED
 .hamburger-line--1.active {
     transform: rotate(43deg);
 }
@@ -301,4 +301,98 @@
 
 .hamburger-line--3.active {
     transform: rotate(-43deg);
+}
+
+// BLOG POST SLIDESHOW
+
+.slideshow-container {
+    width: 50vw;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+
+    &__left,
+    &__right {
+        flex: 1;
+        background-color: rgba(#bee6ff, .8);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__post {
+        flex: 6;
+        position: relative;
+
+        &__header {
+            position: absolute;
+            font-family: 'Roboto Mono', monospace;
+            top: 2rem;
+            left: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.scroll {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-bg;
+}
+
+.post--1,
+.post--2,
+.post--3,
+.post--4,
+.post--5 {
+    background-size: cover;
+    background-position: center;
+    transition: 1s all ease-out;
+}
+
+.post--1 {
+    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
+    url('../src/img/pankaj-patel-u2Ru4QBXA5Q-unsplash (1).jpg');
+}
+
+.post--2 {
+    background-color: orange;
+    display: none;
+    flex: 0;
+}
+
+.post--3 {
+    background-color: yellow;
+    display: none;
+    flex: 0
+}
+
+.post--4 {
+    background-color: green;
+    display: none;
+    flex: 0;
+}
+
+.post--5 {
+    background-color: blue;
+    display: none;
+    flex: 0;
+}
+
+.slideshow-selectors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    width: 14rem;
+}
+
+.slideshow-selector {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 3px solid $color-primary-faded;
+    cursor: pointer;
 }
