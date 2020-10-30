@@ -26,11 +26,6 @@ html {
 
 body {
     background-color: $color-bg;
-    padding: 0 1rem;
-
-    @media only screen and (max-width: $breakpoint8) {
-        padding: 0 .5rem;
-    }
 }
 
 header {

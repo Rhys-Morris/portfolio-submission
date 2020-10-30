@@ -64,6 +64,14 @@
 
 .frame {
     position: relative;
+
+    @media only screen and (max-width: $breakpoint2) {
+        bottom: 10rem;
+    } 
+
+    @media only screen and (max-width: $breakpoint9) {
+        bottom: 0;
+    } 
 }
 
 .frame::after {
