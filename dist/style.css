@@ -1,12 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: #040721;
+}
+
+header {
+  padding-top: 3vh;
+  margin-bottom: 3vh;
+  transition: 1s all ease;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+.header-2 {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #7accff;
+}
+.header-2--numeral {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #7accff;
+}
+
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
+  min-height: 60vh;
 }
 .about__header {
-  padding-right: 10rem;
+  padding-right: 5rem;
 }
 @media only screen and (max-width: 1050px) {
   .about__header {
@@ -57,6 +124,7 @@
     margin: auto;
     text-align: justify;
     margin-bottom: 2rem;
+    word-spacing: 1px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -68,6 +136,9 @@
   .about__text {
     width: 80vw;
   }
+}
+.about__text__link {
+  text-decoration: none;
 }
 .about__photo {
   height: 45rem;
@@ -97,7 +168,6 @@
 @media only screen and (max-width: 600px) {
   .about__photo {
     margin-bottom: 3rem;
-    margin-top: -2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -212,8 +282,6 @@
     position: relative;
     left: 0;
     bottom: 0;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
   }
 }
 .socials__text {
@@ -235,6 +303,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .socials__box {
+    margin-bottom: 1rem;
+    top: 0;
   }
 }
 .socials__item {
@@ -392,6 +468,11 @@
   border-radius: 0.3rem;
   transition: 0.3s all;
 }
+@media only screen and (max-width: 500px) {
+  .form__submit {
+    align-self: flex-end;
+  }
+}
 .form__submit:hover, .form__submit:active {
   background-color: #7accff;
   color: #040721;
@@ -475,6 +556,12 @@
   align-self: start;
   padding-right: 10rem;
 }
+@media only screen and (max-width: 900px) {
+  .contact__header {
+    align-self: center;
+    padding-right: 2rem;
+  }
+}
 .contact__text {
   margin-bottom: 1rem;
   font-size: 1.6rem;
@@ -556,8 +643,7 @@
 }
 
 .footer {
-  margin-top: 14vh;
-  height: 8vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -566,7 +652,31 @@
 }
 @media only screen and (max-width: 900px) {
   .footer {
-    border-top: 1px solid rgba(190, 230, 255, 0.2);
+    margin-top: 16vh;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    margin-top: 16vh;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .footer {
+    justify-content: center;
+  }
+}
+.footer__box {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 370px) {
+  .footer__box {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .footer__note {
@@ -574,7 +684,6 @@
   font-size: 1rem;
 }
 .footer__email {
-  margin-bottom: 1rem;
   font-size: 1rem;
   letter-spacing: 2px;
 }
@@ -687,49 +796,6 @@
   }
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  color: #eee;
-  scroll-behavior: smooth;
-}
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-body {
-  background-color: #040721;
-}
-
-header {
-  padding-top: 3vh;
-  margin-bottom: 3vh;
-  transition: 1s all ease;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -812,29 +878,6 @@ main {
   border: 3px solid #7accff;
 }
 
-/*
-font-family: 'Dancing Script', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace;
-*/
-.header-2 {
-  display: flex;
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  align-items: center;
-  margin-bottom: 5rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #7accff;
-}
-.header-2--numeral {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 300;
-  margin-right: 1rem;
-  font-size: 2rem;
-  color: #7accff;
-}
-
 .work {
   display: flex;
   flex-direction: column;
@@ -843,13 +886,24 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 500px) {
   .work {
-    width: 90%;
+    width: 100%;
   }
 }
 .work__header {
   align-self: flex-start;
   padding-right: 10rem;
   margin-bottom: 5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .work__header {
+    align-self: center;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .work__header {
+    font-size: 3rem;
+  }
 }
 .work__sub-header {
   text-align: center;
@@ -862,6 +916,8 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 500px) {
   .work__sub-header {
+    width: 100vw;
+    padding: 1.5rem 0;
     font-size: 1.6rem;
   }
 }
@@ -969,6 +1025,11 @@ font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   font-weight: 300;
   background-color: rgba(4, 7, 33, 0.8);
+}
+@media only screen and (max-width: 500px) {
+  .work__projects__header {
+    font-size: 1.8rem;
+  }
 }
 .work__projects__text {
   position: absolute;

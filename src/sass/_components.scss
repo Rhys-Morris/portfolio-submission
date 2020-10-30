@@ -18,8 +18,6 @@
         position: relative;
         left: 0;
         bottom: 0;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
         }
 
     &__text {
@@ -42,6 +40,13 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            position: relative;
+            top: 1.5rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            margin-bottom: 1rem;
+            top: 0;
         }
     }
 
@@ -60,7 +65,7 @@
 
 }
 
-// COMPONENTS
+// FRAME AROUND ABOUT ME IMAGE
 
 .frame {
     position: relative;
@@ -89,6 +94,8 @@
         display: none;
     }
 }
+
+// BUTTONS
 
 .btn {
     outline: none;
@@ -120,6 +127,8 @@
     }
 }
 
+// DROP IN ANIMATION CLASS 
+
 .drop-in {
     display: inline-block;
     animation: dropdown .5s ease-out;
@@ -139,6 +148,8 @@
         display: inline-block;
     }
 }
+
+// TEXT HIGHLIGHTING
 
 .hl {
     color: $color-primary;
@@ -218,6 +229,10 @@
         border: 3px solid $color-primary;
         border-radius: .3rem;
         transition: .3s all;
+
+        @media only screen and (max-width: $breakpoint6) {
+            align-self: flex-end;
+        }
 
         &:hover,
         &:active {

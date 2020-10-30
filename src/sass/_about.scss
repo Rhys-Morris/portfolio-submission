@@ -9,9 +9,10 @@
     align-items: center;
 
     width: 80%;
+    min-height: 60vh;   // Possibly remove
 
     &__header {
-        padding-right: 10rem;
+        padding-right: 5rem;
 
         @media only screen and (max-width: $breakpoint9) {
             padding-right: 2rem;
@@ -60,6 +61,7 @@
             margin: auto;
             text-align: justify;
             margin-bottom: 2rem;
+            word-spacing: 1px;
         }
 
         @media only screen and (max-width: $breakpoint4) {
@@ -68,6 +70,10 @@
 
         @media only screen and (max-width: $breakpoint5) {
             width: 80vw;
+        }
+
+        &__link {
+            text-decoration: none;
         }
     }
 
@@ -95,7 +101,6 @@
 
         @media only screen and (max-width: $breakpoint5) {
             margin-bottom: 3rem;
-            margin-top: -2rem;
         }
 
         @media only screen and (max-width: $breakpoint7) {
