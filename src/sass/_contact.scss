@@ -1,0 +1,105 @@
+// CONTACT SECTION
+
+@import 'variables.scss';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    min-height: 62vh;
+
+    @media screen and (max-width: $breakpoint1) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: $breakpoint2) {
+        width: 60%;
+    }
+
+    @media screen and (max-width: $breakpoint4) {
+        width: 80%;
+    }
+
+    &__header {
+        align-self: start;
+        padding-right: 10rem;
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    &__form-map-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: $breakpoint2) {
+            flex-direction: column-reverse;
+            align-items: start;
+        }
+    }
+
+    // FORM DIV IS FOUND IN COMPONENTS SECTION
+
+    &__map-box {
+        position: relative;
+        align-self: flex-start;
+        flex: 2;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint6) {
+            display: none;
+        }
+
+        &__text {
+            z-index: 90;
+            position: absolute;
+            top: 2rem;
+            right: 1rem;
+            padding: 1rem;
+            background-color: rgba(4, 7, 33, .7);
+            color: $color-font-primary;
+            font-size: 1.4rem;
+            border-radius: .5rem;
+
+            @media screen and (max-width: $breakpoint2) {
+                top: 1rem;
+            }
+        }
+    }
+
+    &__map {
+        margin-left: 4rem;
+        border-radius: .5rem;
+        filter: grayscale(1) sepia(30%) hue-rotate(180deg) saturate(300%);
+        transition: .5s all;
+        width: 100%;
+        align-self: start;
+        position: relative;
+        top: 1rem;
+        
+        &:hover {
+            filter: none;
+        }
+
+        @media screen and (max-width: $breakpoint2) {
+            margin-left: 0;
+            margin-bottom: 3rem;
+            filter: none;
+            top: 0;
+        }
+
+        @media screen and (max-width: $breakpoint4) {
+            height: 40rem;
+        }
+
+        @media screen and (max-width: $breakpoint5) {
+            height: 45rem;
+        }
+    }
+}

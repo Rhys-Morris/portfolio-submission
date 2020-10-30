@@ -1,0 +1,86 @@
+// ABOUT ME SECTION
+
+@import 'variables.scss';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 5vh;
+    padding-top: 10vh;
+
+    &__header {
+        padding-right: 10rem;
+
+        @media only screen and (max-width: $breakpoint5) {
+            align-self: flex-end;
+            padding-right: 0;
+            padding-left: 5rem;
+        }
+    }
+
+
+    &__box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media only screen and (max-width: $breakpoint5) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            margin-top: 3rem;
+        }
+    }
+
+    &__text {
+        width: 30vw;
+        font-size: 1.5rem;
+        font-weight: 300;
+        word-spacing: 2px;
+        color: $color-font-secondary;
+
+        @media only screen and (max-width: $breakpoint4) {
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            width: 70vw;
+        }
+    }
+
+    &__photo {
+        height: 30rem;
+        margin-left: 4rem;
+        border-radius: .5rem;
+        filter: grayscale(1.0);
+        transition: .8s all;
+
+        @media only screen and (max-width: $breakpoint1) {
+            height: 25rem;
+        }
+
+        @media only screen and (max-width: $breakpoint4) {
+            height: 20rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            margin-bottom: 2rem;
+        }
+
+        &:hover {
+            filter: grayscale(0);
+        }
+
+        &::after {
+            content: "Hello";
+            display: block;
+            height: 30rem;
+            width: 10rem;
+            position: relative;
+            top: 40rem;
+            background-color: $color-primary;
+        }
+    }
+}

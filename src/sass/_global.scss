@@ -23,3 +23,25 @@ html {
         font-size: 50%; //1rem = 8px;
     }    
 }
+
+body {
+    background-color: $color-bg;
+    padding: 0 1rem;
+
+    @media only screen and (max-width: $breakpoint8) {
+        padding: 0 .5rem;
+    }
+}
+
+header {
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+    transition: 1s all ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
