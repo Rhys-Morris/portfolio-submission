@@ -121,4 +121,19 @@
             background-color: $color-primary;
         }
     }
+
+    &__blog {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__header {
+            padding: 2rem;
+            background-color: $color-primary-faded;
+            color: $color-bg;
+            margin-bottom: 3rem;
+        }
+    }
 }
