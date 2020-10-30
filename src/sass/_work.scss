@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    min-height: 60vh;       // Possibly remove
 
     @media only screen and (max-width: $breakpoint6) {
         width: 100%;

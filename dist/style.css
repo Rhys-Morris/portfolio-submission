@@ -883,6 +883,7 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  min-height: 60vh;
 }
 @media only screen and (max-width: 500px) {
   .work {
