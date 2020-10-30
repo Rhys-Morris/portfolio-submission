@@ -132,6 +132,19 @@
         &__text {
             font-size: 1.8rem;
             margin-bottom: 3rem;
+
+            @media only screen and (max-width: $breakpoint9) {
+                width: 70vw;
+                font-size: 1.6rem;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: $breakpoint5) {
+                width: 80vw;
+            }
         }
 
         &__header {

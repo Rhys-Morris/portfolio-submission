@@ -312,6 +312,19 @@
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: $breakpoint2) {
+        width: 70vw;
+    }
+
+    @media only screen and (max-width: $breakpoint5) {
+        width: 80vw;
+    }
+
+    @media only screen and (max-width: $breakpoint5) {
+        width: 90vw;
+        height: 25vh;
+    }
+
     &__left,
     &__right {
         flex: 1;
@@ -339,6 +352,10 @@
             &:visited,
             &:active {
                 color: $color-primary-faded;
+            }
+
+            @media only screen and (max-width: $breakpoint1) {
+                font-size: 1.6rem;
             }
         }
     }
@@ -408,6 +425,10 @@
     align-items: center;
     margin-top: 2rem;
     width: 14rem;
+
+    @media only screen and (max-width: $breakpoint5) {
+        display: none;
+    }
 }
 
 .slideshow-selector {
