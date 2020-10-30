@@ -18,5 +18,20 @@
     &__note {
         color: $color-primary;
         font-family: 'Roboto Mono', monospace;
+        font-size: 1.2rem;  
     };
+
+    &__email-box {
+        position: fixed;
+        bottom: 16vh;
+        right: -3vw;
+        animation: dropdown 1.5s cubic-bezier(0.34, 1.46, 0.64, 1);
+    }
+
+    &__email {
+        color: $color-primary;
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
 }
