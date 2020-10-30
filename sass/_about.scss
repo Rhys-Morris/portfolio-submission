@@ -8,9 +8,6 @@
     justify-content: center;
     align-items: flex-start;
 
-    margin-top: 5vh;
-    padding-top: 10vh;
-
     &__header {
         padding-right: 10rem;
 
@@ -25,7 +22,7 @@
     &__box {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
 
         @media only screen and (max-width: $breakpoint5) {
             flex-direction: column-reverse;
@@ -34,12 +31,21 @@
         }
     }
 
+    &__text-box {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
     &__text {
         width: 30vw;
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        font-weight: 400;
         word-spacing: 2px;
         color: $color-font-secondary;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        line-height: 2.5rem;
 
         @media only screen and (max-width: $breakpoint4) {
             font-size: 1.4rem;
@@ -51,7 +57,7 @@
     }
 
     &__photo {
-        height: 30rem;
+        height: 35rem;
         margin-left: 4rem;
         border-radius: .5rem;
         filter: grayscale(1.0);
