@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Portfolio Rhys Morris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass ./src/sass/style.scss ./dist/style.css --watch",
+    "webpack:watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rhys-Morris/portfolio-site.git"
+  },
+  "author": "Rhys Morris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rhys-Morris/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/Rhys-Morris/portfolio-site#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0"
+  }
+}

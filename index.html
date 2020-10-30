@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class=index__html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./src/external_css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico" />
+    <title>Rhys Morris Web Developer</title>
+</head>
+<body class="index__body">
+    <header class="index__header">
+        <nav class="nav">
+            <div class="hamburger-div">
+                <div class="hamburger-line hamburger-line--1"></div>
+                <div class="hamburger-line hamburger-line--2"></div>
+                <div class="hamburger-line hamburger-line--3"></div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link drop-in--2"><span class="hl">01.</span>About</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link drop-in--3"><span class="hl">02.</span>Experience</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link drop-in--4"><span class="hl">03.</span>Contact</a></li>
+                <a href="#" class="resume btn-alt">Resume</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="index__main">
+    <section class="hero">
+        <div class="hero__box">
+            <div class="hero__box__titles">
+                <h1 class="hero__title">Hi! I'm <span class="hero__title--name"><div class="drop-in">R</div><div class="drop-in--2">h</div><div class="drop-in--3">y</div><div class="drop-in--4">s</div></span>.</h1>
+                <h2 class="hero__sub-title">A web <span class="hero__dev">developer</span></h2>
+            </div>
+        </div>
+        <p class="hero__text"> 
+            I'm a web developer based in Melbourne, Australia. I'm passionate about building accessible, interactive websites and web applications.
+        </p>
+        <a href="#contact"><button class="btn-alt">Contact Me!</button></a>
+        <img src="./src/img/324-circle-down.svg" alt="scroll-down-prompt" class="hero__scroll-down">
+    </section>
+    <section class="about" id="about">
+        <h2 class="header-2 about__header"><span class="header-2--numeral">01.</span>About Me</h2>
+        <div class="about__box">
+            <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="frame">
+                <img src="./src/img/photo.png" alt="rhys-morris-photo" class="about__photo">
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <h2 class="header-2 work__header"><span class="header-2--numeral">02.</span>Experience</h2>
+        <h3 class="work__sub-header">Languages, Tools & Framework</h3>
+        <div class="work__languages">
+
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-html-5.svg" alt="html-5-icon" class="work__Languages__icon html5">
+                <span class="work__languages__icon__text">HTML 5</span>
+            </div>
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-css3.svg" alt="css3-icon" class="work__Languages__icon css3">
+                <span class="work__languages__icon__text">CSS 3</span>
+            </div>
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-sass.svg" alt="sass-icon" class="work__Languages__icon sass">
+                <span class="work__languages__icon__text">SASS</span>
+            </div>
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-javascript.svg" alt="javascript-icon" class="work__Languages__icon javascript-icon">
+                <span class="work__languages__icon__text">JAVASCRIPT</span>
+            </div>
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-ruby-programming-language.svg" alt="ruby-icon" class="work__Languages__icon ruby">
+                <span class="work__languages__icon__text">RUBY</span>
+            </div>
+            <div class="work__languages__icon-box">
+                <img src="./src/img/icons8-git.svg" alt="git-icon" class="work__Languages__icon git">
+                <span class="work__languages__icon__text">GIT</span>
+            </div>
+        </div>
+        <h3 class="work__sub-header">Projects</h3>
+        <div class="work__projects">
+            <div class="work__projects__project work__projects__project--1">
+                <h3 class="work__projects__header">
+                    To Do Application
+                </h3>
+                <p class="work__projects__text">
+                    Browser based native Javascript To Do application with ability to add/remove projects.
+                </p>
+                <a href="" class="work__projects__github-link">
+                    <img src="./src/img/433-github.svg" alt="github-icon-link" class="work__projects__github-icon">
+                </a>
+            </div>
+            <div class="work__projects__project work__projects__project--2">
+                <h3 class="work__projects__header">
+                    Connect 4
+                </h3>
+                <p class="work__projects__text">
+                    Play Connect 4 with a friend in browser! Built with native Javascript.
+                </p>
+                <a href="" class="work__projects__github-link">
+                    <img src="./src/img/433-github.svg" alt="github-icon-link" class="work__projects__github-icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="header-2 contact__header"><span class="header-2--numeral">03.</span>Contact</h2>
+        <div class="contact__form-map-wrapper">
+            <form action="" class="contact__section__form form">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" class="form__input" placeholder="Name" required>
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" class="form__input" placeholder="Email" required>
+                <label for="subject" class="form__label">Email</label>
+                <input type="text" id="subject" class="form__input" placeholder="Subject">
+                <textarea id="message" class="form__textarea" id="message" cols="20" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" class="form__submit" value="Send">
+            </form>
+            <div class="contact__map-box">
+                <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101218.4837510906!2d144.6364502967008!3d-37.553235070545426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f9776c84f27b%3A0x5045675218cce30!2sSunbury%20VIC%203429!5e0!3m2!1sen!2sau!4v1603930070956!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contact__map-box__text">Where I'm Located<div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <section class="socials">
+            <p class="socials__text">get in touch<p>
+                <div class="socials__box">
+                    <li class="socials__item"><a href="https://twitter.com/RhysMorris91" class="socials__link"><img src="./src/img/407-twitter.svg" alt="twitter-icon-link" class="socials__icon"></a></li>
+                    <li class="socials__item"><a href="https://github.com/Rhys-Morris" class="socials__link"><img src="./src/img/433-github.svg" alt="github-icon-link" class="socials__icon"></a></li>
+                    <li class="socials__item"><a href="https://www.linkedin.com/in/rhys-morris-37ba241b9/" class="socials__link"><img src="./src/img/459-linkedin2.svg" alt="linkedin-icon-link" class="socials__icon"></a></li>
+                </div>
+        </section>
+        <p class="footer__note">Built by Rhys Morris 2020</p>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+</html>
