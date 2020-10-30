@@ -26,6 +26,11 @@
     &__header {
         align-self: start;
         padding-right: 10rem;
+
+        @media only screen and (max-width: $breakpoint3) {
+            align-self: center;
+            padding-right: 2rem;
+        }
     }
 
     &__text {

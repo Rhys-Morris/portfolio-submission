@@ -3,8 +3,7 @@
 @import 'variables.scss';
 
 .footer {
-    margin-top: 14vh;
-    height: 8vh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +11,29 @@
     padding-bottom: 1rem;
 
     @media only screen and (max-width: $breakpoint3) {
-        border-top: 1px solid rgba($color-primary-faded, .2);
+        margin-top: 16vh;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: $breakpoint6) {
+        margin-top: 16vh;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 370px) {
+        justify-content: center;
+    }
+
+    &__box {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 370px) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     
     &__note {
@@ -21,7 +42,6 @@
     };
 
     &__email {
-        margin-bottom: 1rem;
         font-size: 1rem;
         letter-spacing: 2px;
     }
