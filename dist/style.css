@@ -557,13 +557,13 @@
 }
 
 .footer {
-  margin-top: 10vh;
+  margin-top: 14vh;
   height: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 @media only screen and (max-width: 900px) {
   .footer {
@@ -572,35 +572,12 @@
 }
 .footer__note {
   font-family: "Roboto Mono", monospace;
-  font-size: 1.2rem;
-}
-.footer__email-box {
-  position: fixed;
-  bottom: 17vh;
-  right: -4vw;
-  animation: dropdown 1.5s cubic-bezier(0.34, 1.46, 0.64, 1);
-}
-@media only screen and (max-width: 900px) {
-  .footer__email-box {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    animation: none;
-  }
+  font-size: 1rem;
 }
 .footer__email {
-  font-family: "Roboto Mono", monospace;
-  transform: rotate(90deg);
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   letter-spacing: 2px;
-}
-@media only screen and (max-width: 900px) {
-  .footer__email {
-    font-family: "Roboto", sans-serif;
-    transform: rotate(0);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-  }
 }
 
 .hero {
