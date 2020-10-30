@@ -11,27 +11,40 @@
     align-items: center;
     margin-bottom: 2rem;
 
-    @media only screen and (max-width: $breakpoint4) {
+    @media only screen and (max-width: $breakpoint3) {
         border-top: 1px solid rgba($color-primary-faded, .2);
     }
     
     &__note {
-        color: $color-primary;
         font-family: 'Roboto Mono', monospace;
         font-size: 1.2rem;  
     };
 
     &__email-box {
         position: fixed;
-        bottom: 16vh;
-        right: -3vw;
+        bottom: 17vh;
+        right: -5vw;
         animation: dropdown 1.5s cubic-bezier(0.34, 1.46, 0.64, 1);
+
+        @media only screen and (max-width: $breakpoint3) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+            animation: none;
+        }
     }
 
     &__email {
-        color: $color-primary;
+        font-family: 'Roboto Mono', monospace;
         transform: rotate(90deg);
         font-size: 1.5rem;
         letter-spacing: 2px;
+
+        @media only screen and (max-width: $breakpoint3) {
+            font-family: 'Roboto', sans-serif;
+            transform: rotate(0);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
     }
 }

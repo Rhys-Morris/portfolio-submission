@@ -8,26 +8,30 @@
     justify-content: center;
     align-items: flex-start;
 
+    width: 80%;
+
+    @media only screen and (max-width: $breakpoint2) {
+        align-items: center;
+    }
+
     &__header {
         padding-right: 10rem;
 
-        @media only screen and (max-width: $breakpoint5) {
-            align-self: flex-end;
-            padding-right: 0;
-            padding-left: 5rem;
+        @media only screen and (max-width: $breakpoint9) {
+            padding-right: 2rem;
         }
     }
 
-
     &__box {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: flex-start;
         align-items: flex-start;
 
-        @media only screen and (max-width: $breakpoint5) {
-            flex-direction: column-reverse;
-            align-items: flex-start;
-            margin-top: 3rem;
+        @media only screen and (max-width: $breakpoint9) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -38,7 +42,7 @@
     }
 
     &__text {
-        width: 30vw;
+        width: 40vw;
         font-size: 1.8rem;
         font-weight: 400;
         word-spacing: 2px;
@@ -47,32 +51,61 @@
         margin-right: 2rem;
         line-height: 2.5rem;
 
+        @media only screen and (max-width: $breakpoint1) {
+            font-size: 1.6rem;
+            margin-right: 1.2rem;
+        }
+
+        @media only screen and (max-width: $breakpoint2) {
+            width: 35vw;
+            margin-bottom: 1.5rem;
+        }   
+
+        @media only screen and (max-width: $breakpoint9) {
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+
         @media only screen and (max-width: $breakpoint4) {
             font-size: 1.4rem;
         }
 
         @media only screen and (max-width: $breakpoint5) {
-            width: 70vw;
+            width: 80vw;
         }
     }
 
     &__photo {
-        height: 35rem;
+        height: 45rem;
         margin-left: 4rem;
         border-radius: .5rem;
         filter: grayscale(1.0);
         transition: .8s all;
 
         @media only screen and (max-width: $breakpoint1) {
-            height: 25rem;
+            height: 40rem;
         }
 
-        @media only screen and (max-width: $breakpoint4) {
-            height: 20rem;
+        @media only screen and (max-width: $breakpoint2) {
+            height: 35rem;
+        } 
+
+        @media only screen and (max-width: $breakpoint9) {
+            margin-left: 0;
+            margin-bottom: 5rem;
+            height: 30rem;
+            float: right;
         }
 
         @media only screen and (max-width: $breakpoint5) {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            margin-top: -2rem;
+        }
+
+        @media only screen and (max-width: $breakpoint7) {
+            height: 25rem;
         }
 
         &:hover {
