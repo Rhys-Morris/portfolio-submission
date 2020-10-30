@@ -9,6 +9,10 @@
     height: 10vh;
     padding: 0 2rem;
 
+    @media only screen and (max-width: $breakpoint3) {
+        padding: 0 .5rem;
+    }
+
     // Animations
     transition: .3s all;
 
@@ -33,7 +37,7 @@
     }
 
     @media only screen and (max-width: $breakpoint5) {
-        padding: 0 1rem;
+        padding: 0;
     }
 
     &__item {
@@ -44,12 +48,12 @@
         display: flex;
         align-items: center;
 
-        @media only screen and (max-width: $breakpoint5) {
+        @media only screen and (max-width: $breakpoint3) {
             justify-content: space-evenly;
             width: 100%;
         }
 
-        @media only screen and (max-width: $breakpoint6) {
+        @media only screen and (max-width: $breakpoint5) {
             display: none;
         }
     }
@@ -64,6 +68,11 @@
         padding-bottom: .5rem;
         margin-right: 5rem;
         transition: .2s all;
+
+        @media screen and (max-width: $breakpoint3) {
+            font-size: 1.3rem;  
+            margin-right: 2.5rem;
+        }
     }
 
     &__link:hover,
