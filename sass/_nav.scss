@@ -1,0 +1,81 @@
+// NAV BAR
+
+@import 'variables.scss';
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 10vh;
+    padding: 0 2rem;
+
+    // Animations
+    transition: .3s all;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 3vh;
+        z-index: 200;
+        width: 100%;
+        background-color: rgba($color-bg, .9);
+        height: 9vh;
+    }
+
+    &.fadeUp {
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        right: 0;
+        width: 100%;
+        transform: translateY(-10vh);
+    }
+
+    @media only screen and (max-width: $breakpoint5) {
+        padding: 0 1rem;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $breakpoint5) {
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            display: none;
+        }
+    }
+
+    &__link:visited,
+    &__link {
+        color: $color-font-primary;
+        border-bottom: 2px solid $color-bg;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-family: 'Roboto Mono', monospace;
+        padding-bottom: .5rem;
+        margin-right: 5rem;
+        transition: .2s all;
+    }
+
+    &__link:hover,
+    &__link:active {
+        border-bottom: 2px solid $color-primary;
+    }
+}
+
+.resume {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin-right: 0;
+    border: 3px solid $color-primary;
+}

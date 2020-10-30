@@ -1,0 +1,22 @@
+// FOOTER
+
+@import 'variables.scss';
+
+.footer {
+    margin-top: 10vh;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $breakpoint4) {
+        border-top: 1px solid rgba($color-primary-faded, .2);
+    }
+    
+    &__note {
+        color: $color-primary;
+        font-family: 'Roboto Mono', monospace;
+    };
+}

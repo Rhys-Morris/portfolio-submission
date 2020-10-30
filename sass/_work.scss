@@ -1,0 +1,152 @@
+// WORK SECTION
+
+@import 'variables.scss';
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__header {
+        align-self: flex-start;
+        padding-right: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    &__sub-header {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        background-color: $color-primary-faded;
+        color: $color-bg;
+        text-transform: uppercase;
+    }
+
+    &__languages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 5rem;
+        width: 100%;
+
+        @media only screen and (max-width: $breakpoint2) {
+            width: 80vw;
+        }
+
+        @media only screen and (max-width: $breakpoint3) {
+            width: 70vw;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50% 50%;
+            row-gap: 2rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            width: 80vw;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            width: 100vw;
+        }
+
+        @media only screen and (max-width: $breakpoint7) {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 33% 33% 33%;
+            row-gap: 2rem;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        &__icon {
+
+            &-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__text {
+                font-family: 'Roboto Mono', monospace;;
+                margin-top: 1.2rem;
+                font-size: 1.4rem;  
+            }
+        }
+    }
+
+    &__projects {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        
+        &__project {
+            display: flex;
+            flex-direction: column;
+            width: 55rem;
+            height: 30rem;      // TEST
+            background-position: center;
+            background-size: cover;
+            border-radius: .5rem;
+            position: relative;
+            transition: 2s all;
+
+            &--1 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
+                                  url('../src/img/todoproject.png');
+                transition: 2s all;
+
+                &:hover {
+                    background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0), rgba(4, 7, 33, 0)),
+                                      url('../src/img/todoproject.png');
+                    border: none;
+                }
+            }
+
+            &--2 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9  ), rgba(4, 7, 33, .8)),
+                                  url('../src/img/connect4project.PNG');
+
+                &:hover {
+                    background-image: url('../src/img/connect4project.PNG');
+                }
+            }
+
+        }
+
+        &__header {
+            padding: 2rem;
+            display: inline;
+            font-size: 2rem;
+            font-weight: 300;
+            background-color: rgba(4, 7, 33, .8);
+        }
+
+        &__text {
+            position: absolute;
+            width: 45%;
+            right: 4rem;
+            top: 35%;
+            font-size: 1.4rem;
+            padding: 2rem;
+            background-color: rgba(4, 7, 33, .8);
+        }
+
+        &__github-link {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        &__github-icon {
+            height: 2.5rem;
+        }
+    }
+}

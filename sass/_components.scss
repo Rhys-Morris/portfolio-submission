@@ -146,7 +146,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 1;
 
     &__label {
         visibility: hidden;
@@ -199,7 +199,7 @@
         background-color: $color-bg;
         outline: none;
         color: $color-primary;
-        border: 2px solid $color-primary;
+        border: 3px solid $color-primary;
         border-radius: .3rem;
         transition: .3s all;
 
