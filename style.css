@@ -188,7 +188,7 @@ font-family: 'Roboto Mono', monospace;
   background-color: #7accff;
 }
 .about__blog {
-  margin-top: 20rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,15 +213,6 @@ font-family: 'Roboto Mono', monospace;
   .about__blog__text {
     width: 80vw;
   }
-}
-.about__blog__header {
-  text-align: center;
-  padding: 1.5rem;
-  color: #040721;
-  background-color: #bee6ff;
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
 }
 .about__blog__link {
   text-decoration: none;
@@ -839,17 +830,17 @@ font-family: 'Roboto Mono', monospace;
 }
 .slideshow-container__post__header {
   position: absolute;
-  color: #bee6ff;
+  color: #eee;
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   top: 10%;
-  right: 10%;
+  left: 10%;
   font-weight: 300;
   text-transform: uppercase;
   transition: 0.2s all;
 }
 .slideshow-container__post__header:visited, .slideshow-container__post__header:active {
-  color: #bee6ff;
+  color: #eee;
 }
 @media only screen and (max-width: 1400px) {
   .slideshow-container__post__header {

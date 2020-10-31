@@ -123,7 +123,7 @@
     }
 
     &__blog {
-        margin-top: 20rem;
+        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -145,16 +145,6 @@
             @media only screen and (max-width: $breakpoint5) {
                 width: 80vw;
             }
-        }
-
-        &__header {
-            text-align: center;
-            padding: 1.5rem;
-            color: $color-bg;
-            background-color: $color-primary-faded;
-            font-size: 2rem;
-            text-transform: uppercase;
-            margin-bottom: 3rem;
         }
 
         &__link {

@@ -341,18 +341,18 @@
 
         &__header {
             position: absolute;
-            color: $color-primary-faded;
+            color: $color-font-primary;
             font-family: 'Roboto Mono', monospace;
             font-size: 2rem;
             top: 10%;
-            right: 10%;
+            left: 10%;
             font-weight: 300;
             text-transform: uppercase;
             transition: .2s all;
 
             &:visited,
             &:active {
-                color: $color-primary-faded;
+                color: $color-font-primary;
             }
 
             @media only screen and (max-width: $breakpoint1) {
