@@ -378,7 +378,7 @@
     transition: 1s all ease-out;
 }
 
-// INITIAL LOAD
+// INITIAL LOAD SET UP
 
 .header--1 {
     visibility: visible;
@@ -420,6 +420,8 @@
     flex: 0;
 }
 
+// SLIDESHOW SELECTORS
+
 .slideshow-selectors {
     display: flex;
     justify-content: space-around;
@@ -436,7 +438,7 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    border: 3px solid $color-primary-faded;
+    border: 3px solid $color-primary;
     cursor: pointer;
 }
 
