@@ -188,7 +188,7 @@ font-family: 'Roboto Mono', monospace;
   background-color: #7accff;
 }
 .about__blog {
-  margin-top: 10rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -842,8 +842,9 @@ font-family: 'Roboto Mono', monospace;
   color: #bee6ff;
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
-  top: 2rem;
-  left: 2rem;
+  top: 10%;
+  right: 10%;
+  font-weight: 300;
   text-transform: uppercase;
   transition: 0.2s all;
 }
