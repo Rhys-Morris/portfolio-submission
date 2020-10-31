@@ -103,4 +103,4 @@ selectors.forEach(selector => selector.addEventListener('click', () => {
 // ----- INITIALISE -----
 updateSelected();
 
-timedScroll();  
+// timedScroll();  

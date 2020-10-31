@@ -1,10 +1,230 @@
 // BLOG SECTION
 
 .blog {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+    @media only screen and (max-width: $breakpoint8) {
+        width: 80vw;
+    }
+
+    &__wrapper {
+        margin-bottom: 10vh;
+    }
+
     &__post {
+        height: 20vh;
+        width: 100%;
+        background-position: fixed;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7), rgba(4, 7, 33, .6)),
+        url('./img/blog-bootstrap-large.jpg');
+        position: relative;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-top: 2px solid $color-primary-faded;
+        border-left: 2px solid $color-primary-faded;
+        border-right: 2px solid $color-primary-faded;
+
+        @media only screen and (max-width: $breakpoint4) {
+            background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9), rgba(4, 7, 33, .8)),
+        url('./img/blog-bootstrap-large.jpg');
+        }
+        
+
+        &__header-box {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            text-transform: uppercase;
+            padding: 5rem;
+            background-color: $color-bg;
+
+            @media only screen and (max-width: $breakpoint3) {
+                left: 3%;
+                padding: 5rem 3rem;
+                min-width: 50vw;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                background: none;
+                top: 10%;
+            }
+
+            @media only screen and (max-width: $breakpoint8) {
+                top: 3%;
+            }
+        }
 
         &__header {
-            margin-top: 20vh;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            position: relative;
+            bottom: .5rem;
+
+            @media only screen and (max-width: $breakpoint1) {
+                font-size: 2rem;
+            }
+        }
+
+        &__date {
+            position: absolute;
+            top: 75%;
+            left: 8rem;
+            font-size: 1.6rem;
+
+            @media only screen and (max-width: $breakpoint1) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                font-size: 1.2rem;
+            }
+
+            @media only screen and (max-width: $breakpoint8) {
+                left: 5rem;
+            }
+        }
+
+        &__byline {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 1.6rem;
+            color: $color-font-primary;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: $breakpoint1) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            min-height: 60vh;
+            padding: 5rem;
+            background-color: $color-font-primary;
+            color: $color-bg;
+            font-size: 1.6rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+
+            @media only screen and (max-width: $breakpoint1) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: $breakpoint2) {
+                padding: 3rem;
+            }
+
+
+            @media only screen and (max-width: $breakpoint4) {
+                font-size: 1.2rem;
+            }
+
+            @media only screen and (max-width: $breakpoint5) {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &__image {
+            float: right;
+            border-radius: 1rem;
+            margin: 0 0 3rem 3rem;
+            box-shadow: 1rem 1rem .5rem 0 rgba(#000, .4);
+
+            @media only screen and (max-width: $breakpoint1) {
+                width: 60rem;
+            }
+
+            @media only screen and (max-width: $breakpoint2) {
+                width: 50rem;
+            }
+
+            @media only screen and (max-width: $breakpoint3) {
+                width: 35rem;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                width: 30rem;
+                margin: 0 0 2rem 2rem;
+            }
+
+            @media only screen and (max-width: $breakpoint5) {
+                float: none;
+                display: block;
+            }
+
+            &--2 {
+                @extend .blog__post__image;
+                float: left;
+                margin: 0 3rem 3rem 0;
+                box-shadow: -1rem 1rem .5rem 0 rgba(#000, .4);
+
+                @media only screen and (max-width: $breakpoint4) {
+                    width: 30rem;
+                    margin: 0 2rem 2rem 0;
+                }
+
+                @media only screen and (max-width: $breakpoint5) {
+                    float: none;
+                    display: block;
+                    box-shadow: 1rem 1rem .5rem 0 rgba(#000, .4);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        font-family: 'Roboto Mono', monospace;
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            width: 90vw;
+            font-size: 1.4rem;
+
+            @media only screen and (max-width: $breakpoint3) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__socials {
+
+        &__box {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        &__item {
+            list-style: none;
+            margin: 0 3rem;
+            position: relative;
+            top: 2rem;
+
+            @media only screen and (max-width: $breakpoint5) {
+            margin: 0 1.5rem;
+            top: 0;
+            }
         }
     }
 }
