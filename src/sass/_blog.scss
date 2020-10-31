@@ -14,6 +14,16 @@
 
     &__wrapper {
         margin-bottom: 10vh;
+
+        // FADE IN EFFECT
+        opacity: 0;
+        transform: translateY(5rem);
+        transition: .5s all;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     &__post {
@@ -27,8 +37,6 @@
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
         border-top: 2px solid $color-primary-faded;
-        border-left: 2px solid $color-primary-faded;
-        border-right: 2px solid $color-primary-faded;
 
         @media only screen and (max-width: $breakpoint4) {
             background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9), rgba(4, 7, 33, .8)),
@@ -227,4 +235,11 @@
             }
         }
     }
+}
+
+// Override scroll in effect for top post
+
+#top-post {
+    opacity: 1;
+    transform: translateY(0);
 }
