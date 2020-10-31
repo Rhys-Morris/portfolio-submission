@@ -301,6 +301,35 @@ font-family: 'Roboto Mono', monospace;
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes easterEgg {
+  0% {
+    color: yellow;
+    transform: rotate(0);
+  }
+  20% {
+    color: orange;
+    transform: rotate(-20deg) scale(1.1);
+  }
+  40% {
+    color: red;
+    transform: rotate(20deg) scale(1.2);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  60% {
+    color: purple;
+    transform: rotate(-20deg) scale(1.2);
+  }
+  80% {
+    color: blue;
+    transform: rotate(20deg) scale(1.1);
+  }
+  100% {
+    color: green;
+    transform: rotate(0) scale(1);
+  }
+}
 .blog {
   display: flex;
   flex-direction: column;
@@ -923,6 +952,19 @@ font-family: 'Roboto Mono', monospace;
 .slideshow-info {
   margin-top: 1.5rem;
   font-size: 1.4rem;
+}
+
+.easter-egg {
+  font-size: 30rem;
+  animation: easterEgg 5s ease;
+  animation-iteration-count: infinite;
+}
+.easter-egg__box {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact {
