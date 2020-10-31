@@ -69,6 +69,11 @@
         margin-right: 5rem;
         transition: .2s all;
 
+        @media screen and (max-width: $breakpoint1) {
+            font-size: 1.5rem;  
+            margin-right: 2.5rem;
+        }
+
         @media screen and (max-width: $breakpoint3) {
             font-size: 1.3rem;  
             margin-right: 2.5rem;
@@ -87,4 +92,12 @@
     text-decoration: none;
     margin-right: 0;
     border: 3px solid $color-primary;
+
+    @media screen and (max-width: $breakpoint1) {
+        font-size: 1.5rem;  
+    }
+
+    @media screen and (max-width: $breakpoint3) {
+        font-size: 1.3rem;  
+    }
 }

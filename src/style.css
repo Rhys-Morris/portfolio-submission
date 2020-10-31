@@ -108,7 +108,7 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 1400px) {
   .about__text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-right: 1.2rem;
   }
 }
@@ -1127,7 +1127,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .hero {
-  height: 62vh;
+  height: 61vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1298,6 +1298,12 @@ font-family: 'Roboto Mono', monospace;
   margin-right: 5rem;
   transition: 0.2s all;
 }
+@media screen and (max-width: 1400px) {
+  .nav__link:visited, .nav__link {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+  }
+}
 @media screen and (max-width: 900px) {
   .nav__link:visited, .nav__link {
     font-size: 1.3rem;
@@ -1314,6 +1320,16 @@ font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   margin-right: 0;
   border: 3px solid #7accff;
+}
+@media screen and (max-width: 1400px) {
+  .resume {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .resume {
+    font-size: 1.3rem;
+  }
 }
 
 .work {
