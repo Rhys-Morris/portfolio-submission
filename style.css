@@ -349,6 +349,13 @@ font-family: 'Roboto Mono', monospace;
 }
 .blog__wrapper {
   margin-bottom: 10vh;
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: 0.5s all;
+}
+.blog__wrapper.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 .blog__post {
   height: 20vh;
@@ -360,8 +367,6 @@ font-family: 'Roboto Mono', monospace;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   border-top: 2px solid #bee6ff;
-  border-left: 2px solid #bee6ff;
-  border-right: 2px solid #bee6ff;
 }
 @media only screen and (max-width: 750px) {
   .blog__post {
@@ -564,6 +569,11 @@ font-family: 'Roboto Mono', monospace;
     margin: 0 1.5rem;
     top: 0;
   }
+}
+
+#top-post {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .socials {
@@ -1324,7 +1334,7 @@ font-family: 'Roboto Mono', monospace;
   padding: 1rem 2rem;
   text-decoration: none;
   margin-right: 0;
-  border: 3px solid #7accff;
+  border: 3px solid #bee6ff;
 }
 @media screen and (max-width: 1400px) {
   .resume {
