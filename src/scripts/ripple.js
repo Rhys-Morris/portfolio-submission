@@ -1,6 +1,6 @@
 // Add ripple effect to heto button when clicked
 
-window.addEventListener('click', (e) => {
+window.addEventListener('touch', (e) => {
     let x = e.clientX;
     let y = e.clientY;
 
