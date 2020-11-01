@@ -15,17 +15,17 @@ The target audience of this website is an employer looking to engage a web devel
 ### Functionality / Features
 
 - Hero section
-    - Custom animations
-    - Scripted ripple effect on touch events for mobile
+    - Custom CSS animations
+    - Scripted ripple effect on click events
 - About section
     - Background information on myself
     - Outside links to relevant information
-    - Slideshow of latest blog posts
+    - Scripted slideshow of latest blog posts
     - Link to personal blog
-- Experience section
+- Work section
     - Outline of technology proficiency
     - Project cards with outside links to source code (github repository) and deployed project
-    - Further css animation implementation
+    - Further CSS animation implementation utilising CSS Animations library
 - Contact section
     - Functional form submission via formspree
     - Form validation with javascript
@@ -33,11 +33,43 @@ The target audience of this website is an employer looking to engage a web devel
 - Blog
     - Drop down navigation on scroll event
     - Scroll in blog posts
+- Other
+    - Fully responsive design
+    - Hamburger navigation implementation on reduced width screens
 
 ### Sitemap
 
-![Sitemap image](./src/img/Sitemap.png)
+![Sitemap image](./docs/Sitemap.png)
 
 ### Screenshots
+
+#### **Wireframing examples through Balsamiq:**
+
+#### Hero section
+
+![Desktop hero wireframe](./docs/hero-desktop.png)
+![Mobile hero wireframe](./docs/hero-mobile.png)
+![Mobile hamburger nav](./docs/drop-down-nav.png)
+
+#### About section
+
+![Desktop about wireframe](./docs/about-desktop-1.png)
+![Mobile about wireframe](./docs/about-mobile.png)
+
+#### Work section
+
+![Desktop work wireframe](./docs/experience-desktop.png)
+![Mobile work wireframe](./docs/experience-mobile.png)
+
+#### Contact section
+
+![Desktop contact wireframe](./docs/contact-desktop.png)
+![Tablet contact wireframe](./docs/contact-ipad)
+![Mobile contact wireframe](./docs/contact-mobile.png)
+
+#### Blog section
+
+![Desktop blog wireframe](./docs/blog-desktop.png)
+![Mobile blog wireframe](./docs/blog-mobile.png)
 
 ### Tech Stack
