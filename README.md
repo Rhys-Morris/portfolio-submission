@@ -37,6 +37,14 @@ The target audience of this website is an employer looking to engage a web devel
     - Fully responsive design
     - Hamburger navigation implementation on reduced width screens
 
+### Tech Stack
+
+- HTML 5
+- CSS 3
+- Git/Github version control
+- Node Package Manager
+- Javascript
+
 ### Sitemap
 
 ![Sitemap image](./docs/Sitemap.png)
@@ -63,13 +71,11 @@ The target audience of this website is an employer looking to engage a web devel
 
 #### Contact section
 
-![Desktop contact wireframe](./docs/contact-desktop.png)
-![Tablet contact wireframe](./docs/contact-ipad)
-![Mobile contact wireframe](./docs/contact-mobile.png)
+![Desktop contact wireframe](./docs/contact-desktop.PNG)
+![Tablet contact wireframe](./docs/contact-ipad.png)
+![Mobile contact wireframe](./docs/contact-mobile.PNG)
 
 #### Blog section
 
 ![Desktop blog wireframe](./docs/blog-desktop.png)
 ![Mobile blog wireframe](./docs/blog-mobile.png)
-
-### Tech Stack
