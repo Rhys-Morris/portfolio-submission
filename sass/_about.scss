@@ -74,6 +74,7 @@
 
         &__link {
             text-decoration: none;
+            
         }
     }
 
@@ -149,10 +150,24 @@
 
         &__link {
             text-decoration: none;
+            font-weight: bold;
             color: $color-primary;
+            position: relative;
+            transition: .5s all;
 
             &:hover{
                 color: $color-primary-faded;
+
+                &::after {
+                    content: '';
+                    height: 2px;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    background-color: $color-primary;
+                    animation: underline .3s ease-out;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }

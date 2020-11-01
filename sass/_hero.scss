@@ -3,10 +3,18 @@
 @import 'variables.scss';
 
 .hero {
-    height: 61vh;
+    height: 77vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: $breakpoint3) {
+        height: 63vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 61vh;
+    }
 
     &__title {
         font-size: 5rem;
