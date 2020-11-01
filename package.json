@@ -8,7 +8,7 @@
     "sass:watch": "sass ./src/sass/style.scss ./src/style.css --watch",
     "webpack:watch": "webpack --watch",
     "webpack:build": "npx webpack",
-    "autoprefix css": "npx postcss *.css --use autoprefixer -d build/"
+    "autoprefix-css": "npx postcss ./src/style.css --use autoprefixer -d ./src/style.prefix.css"
   },
   "repository": {
     "type": "git",
