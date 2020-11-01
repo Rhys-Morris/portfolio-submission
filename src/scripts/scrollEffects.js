@@ -26,7 +26,6 @@ previousPosition = 0;
 
 window.addEventListener('scroll', debounce((e) => {
     
-    // Scroll down icon fade out
     if (window.scrollY > 0) {
         if (screen.width > 500) {
             navBar.classList.add('fadeUp');
@@ -34,7 +33,6 @@ window.addEventListener('scroll', debounce((e) => {
         }
     }
 
-    // Scroll down icon fade in
     if (window.scrollY == 0) {
         if (screen.width > 500) {
             navBar.classList.remove('fadeUp'); 

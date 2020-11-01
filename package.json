@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:watch": "sass ./src/sass/style.scss ./src/style.css --watch",
     "webpack:watch": "webpack --watch",
-    "webpack:build": "npx webpack"
+    "webpack:build": "npx webpack",
+    "autoprefix css": "npx postcss *.css --use autoprefixer -d build/"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,10 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "autoprefixer": "^10.0.1",
     "babel-loader": "^8.1.0",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.2.0",
     "webpack": "^5.3.0",
     "webpack-cli": "^4.1.0"
   }
