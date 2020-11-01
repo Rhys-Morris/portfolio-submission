@@ -1140,6 +1140,11 @@ font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
   letter-spacing: 2px;
 }
+@media only screen and (max-width: 370px) {
+  .footer__email {
+    margin-bottom: 1rem;
+  }
+}
 
 .hero {
   height: 61vh;
@@ -1510,13 +1515,22 @@ font-family: 'Roboto Mono', monospace;
   padding: 2rem;
   background-color: rgba(4, 7, 33, 0.8);
 }
-.work__projects__github-link {
+.work__projects__link-box {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.work__projects__link-icon {
+  height: 2.5rem;
+  padding: 0 1rem;
+  fill: #7accff;
 }
 .work__projects__github-icon {
   height: 2.5rem;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -190,14 +190,24 @@
             background-color: rgba(4, 7, 33, .8);
         }
 
-        &__github-link {
+        &__link-box {
             position: absolute;
             bottom: 1rem;
             right: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__link-icon {
+            height: 2.5rem;
+            padding: 0 1rem;
+            fill: $color-primary;
         }
 
         &__github-icon {
             height: 2.5rem;
+            padding: 0 1rem;
         }
     }
 }
