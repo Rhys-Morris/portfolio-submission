@@ -1014,7 +1014,7 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
   width: 80%;
-  min-height: 62vh;
+  min-height: 77vh;
 }
 @media screen and (max-width: 1400px) {
   .contact {
@@ -1029,6 +1029,16 @@ font-family: 'Roboto Mono', monospace;
 @media screen and (max-width: 750px) {
   .contact {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact {
+    min-height: 63vh;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contact {
+    min-height: 62vh;
   }
 }
 .contact__header {
