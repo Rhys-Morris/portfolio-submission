@@ -356,6 +356,18 @@ font-family: 'Roboto Mono', monospace;
     width: 100%;
   }
 }
+@keyframes ripple {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0.5;
+  }
+  to {
+    height: 30rem;
+    width: 30rem;
+    opacity: 0;
+  }
+}
 .blog {
   display: flex;
   flex-direction: column;
@@ -1286,18 +1298,20 @@ font-family: 'Roboto Mono', monospace;
     width: 50vw;
   }
 }
-.hero__scroll-down {
-  width: 3rem;
-  align-self: center;
-  margin-top: auto;
-  animation: fadeInDown 3s ease;
-  transition: 1.5s opacity ease;
+.hero__button {
+  align-self: flex-start;
+  text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
-  .hero__scroll-down {
-    position: relative;
-    bottom: 5vh;
-  }
+
+.ripple {
+  background: rgba(255, 255, 255, 0);
+  border: 3px solid #7accff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripple 2s linear;
+  animation-fill-mode: backwards;
 }
 
 .nav {
