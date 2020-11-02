@@ -805,7 +805,7 @@ font-family: 'Roboto Mono', monospace;
   color: #040721;
 }
 .form__input:invalid, .form__textarea:invalid {
-  color: orangered;
+  color: red;
 }
 .form__input:valid, .form__textarea:valid {
   color: #040721;
@@ -823,7 +823,6 @@ font-family: 'Roboto Mono', monospace;
   margin-top: 0.5rem;
 }
 .form__submit {
-  margin-top: 2rem;
   padding: 1rem 1.5rem;
   font-size: 1.6rem;
   align-self: start;
@@ -843,6 +842,18 @@ font-family: 'Roboto Mono', monospace;
   background-color: #7accff;
   color: #040721;
   transform: translateY(-0.5rem);
+}
+
+.error {
+  color: red;
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+}
+.error-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 #subject {

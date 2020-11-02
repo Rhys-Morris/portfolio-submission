@@ -203,7 +203,7 @@
         }
 
         &:invalid {
-            color: orangered;
+            color: red;
         }
 
         &:valid {
@@ -225,7 +225,6 @@
     }
 
     &__submit {
-        margin-top: 2rem;
         padding: 1rem 1.5rem;
         font-size: 1.6rem;
         align-self: start;
@@ -247,6 +246,22 @@
             transform: translateY(-.5rem);
         }
     }
+}
+
+// HANDLING FORM INPUT ERRORS
+
+.error {
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    color: red;
+    font-size: 1.4rem;
+    padding: 0 .5rem;
 }
 
 // ID ELEMENTS FOR FORM
