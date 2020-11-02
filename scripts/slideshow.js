@@ -17,7 +17,7 @@ function updateSelected() {
     selectors[toSelect].style["background-color"] = '#7accff';
 }
 
-/*function timedScroll() {
+function timedScroll() {
     setTimeout(() => {
         let currentImage = images[currentImageNumber - 1];
         let nextImage = images[currentImageNumber];
@@ -37,14 +37,14 @@ function updateSelected() {
         nextImage.style.flex = '6';
         currentSelector.style["background-color"] = "#040721";
         nextSelector.style["background-color"] = "#7accff";
-        currentHeader.style.visbility = 'hidden';
-        nextHeader.style.visibility = 'visible';
+        currentHeader.style.display = 'none';
+        nextHeader.style.display = 'inline';
         
         currentImageNumber++;     
 
         timedScroll();
     }, 10000);
-} */
+} 
 
 // ----- EVENT LISTENERS -----
 scrollRight.addEventListener('click', () => {
@@ -52,7 +52,7 @@ scrollRight.addEventListener('click', () => {
     const currentImage = document.querySelector(`.post--${currentImageNumber}`);
     const currentHeader = document.querySelector(`.header--${currentImageNumber}`);
     currentImage.style.flex = '0';
-    currentHeader.style.visibility = 'hidden';
+    currentHeader.style.display = 'none';
 
     currentImageNumber++;
     if (currentImageNumber == 6) { currentImageNumber = 1 }
@@ -60,7 +60,7 @@ scrollRight.addEventListener('click', () => {
     const nextImage = document.querySelector(`.post--${currentImageNumber}`);
     const nextHeader = document.querySelector(`.header--${currentImageNumber}`);
     nextImage.style.flex = '6';
-    nextHeader.style.visibility = 'visible';
+    nextHeader.style.display = 'inline';
 
     updateSelected();
 })
@@ -69,7 +69,7 @@ scrollLeft.addEventListener('click', () => {
     const currentImage = document.querySelector(`.post--${currentImageNumber}`);
     const currentHeader = document.querySelector(`.header--${currentImageNumber}`);
     currentImage.style.flex = '0';
-    currentHeader.style.visibility = 'hidden';
+    currentHeader.style.display = 'none';
 
     currentImageNumber--;
     if (currentImageNumber == 0) { currentImageNumber = 5 }
@@ -77,7 +77,7 @@ scrollLeft.addEventListener('click', () => {
     const nextImage = document.querySelector(`.post--${currentImageNumber}`);
     const nextHeader = document.querySelector(`.header--${currentImageNumber}`);
     nextImage.style.flex = '6';
-    nextHeader.style.visibility = 'visible';
+    nextHeader.style.display = 'inline';
 
     updateSelected();
 })
@@ -89,9 +89,9 @@ selectors.forEach(selector => selector.addEventListener('click', () => {
     const headerSelected = headers[selectors.indexOf(selector)]
 
     currentlySelectedimage.style.flex = '0';
-    currentSelectedHeader.style.visibility = 'hidden';
+    currentSelectedHeader.style.display = 'none';
     imageSelected.style.flex = '6';
-    headerSelected.style.visibility = 'visible';
+    headerSelected.style.display = 'inline';
     
 
     selectors[currentImageNumber - 1].style["background-color"] = '#040721';
@@ -103,4 +103,4 @@ selectors.forEach(selector => selector.addEventListener('click', () => {
 // ----- INITIALISE -----
 updateSelected();
 
-// timedScroll();  
+timedScroll();  

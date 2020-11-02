@@ -8,8 +8,8 @@
     align-items: center;
     width: 90vw;
 
-    @media only screen and (max-width: $breakpoint8) {
-        width: 80vw;
+    @media only screen and (max-width: $breakpoint7) {
+        width: 100vw;
     }
 
     &__wrapper {
@@ -43,6 +43,11 @@
         url('./img/blog-bootstrap-large.jpg');
         }
         
+        @media only screen and (max-width: $breakpoint7) {
+            border-radius: 0;
+            border: none;
+            box-shadow: -.5rem 0 .5rem .5rem rgba($color-primary-faded, .3);
+        }
 
         &__header-box {
             position: absolute;
@@ -145,6 +150,11 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+            }
+
+            @media only screen and (max-width: $breakpoint7) {
+                border-radius: 0;
+                border: none;
             }
         }
 
