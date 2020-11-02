@@ -13,5 +13,5 @@ window.addEventListener('click', (e) => {
 
     setTimeout(() => {
         ripples.remove()
-    }, 1000);
+    }, 2000);
 });
