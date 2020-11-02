@@ -334,7 +334,7 @@
     &__left,
     &__right {
         flex: 1;
-        background-color: rgba(#bee6ff, .8);
+        background-color: rgba($color-bg, .8);
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -369,9 +369,9 @@
 }
 
 .scroll {
-    height: 2rem;
-    width: 2rem;
-    fill: $color-bg;
+    height: 3rem;
+    width: 3rem;
+    fill: $color-primary;
 }
 
 .post--1,
@@ -387,14 +387,14 @@
 // INITIAL LOAD SET UP
 
 .header--1 {
-    visibility: visible;
+    display: inline;
 }
 
 .header--2,
 .header--3,
 .header--4,
 .header--5 {
-    visibility: hidden;
+    display: none;
 }
 
 .post--1 {
@@ -444,7 +444,7 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    border: 3px solid $color-primary;
+    border: 2px solid $color-primary;
     cursor: pointer;
 }
 

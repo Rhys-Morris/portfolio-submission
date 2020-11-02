@@ -199,6 +199,11 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1050px) {
+  .about__blog {
+    margin-top: 2rem;
+  }
+}
 .about__blog__text {
   font-size: 1.8rem;
   margin-bottom: 3rem;
@@ -206,7 +211,8 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 1050px) {
   .about__blog__text {
     width: 70vw;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -375,9 +381,9 @@ font-family: 'Roboto Mono', monospace;
   align-items: center;
   width: 90vw;
 }
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 400px) {
   .blog {
-    width: 80vw;
+    width: 100vw;
   }
 }
 .blog__wrapper {
@@ -404,6 +410,13 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 750px) {
   .blog__post {
     background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("./img/blog-bootstrap-large.jpg");
+  }
+}
+@media only screen and (max-width: 400px) {
+  .blog__post {
+    border-radius: 0;
+    border: none;
+    box-shadow: -0.5rem 0 0.5rem 0.5rem rgba(190, 230, 255, 0.3);
   }
 }
 .blog__post__header-box {
@@ -515,6 +528,12 @@ font-family: 'Roboto Mono', monospace;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .blog__post__text {
+    border-radius: 0;
+    border: none;
   }
 }
 .blog__post__image, .blog__post__image--2 {
@@ -900,7 +919,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .slideshow-container__left, .slideshow-container__right {
   flex: 1;
-  background-color: rgba(190, 230, 255, 0.8);
+  background-color: rgba(4, 7, 33, 0.8);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -931,9 +950,9 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .scroll {
-  height: 2rem;
-  width: 2rem;
-  fill: #040721;
+  height: 3rem;
+  width: 3rem;
+  fill: #7accff;
 }
 
 .post--1,
@@ -947,14 +966,14 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .header--1 {
-  visibility: visible;
+  display: inline;
 }
 
 .header--2,
 .header--3,
 .header--4,
 .header--5 {
-  visibility: hidden;
+  display: none;
 }
 
 .post--1 {
@@ -998,7 +1017,7 @@ font-family: 'Roboto Mono', monospace;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 3px solid #7accff;
+  border: 2px solid #7accff;
   cursor: pointer;
 }
 
