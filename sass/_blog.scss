@@ -17,8 +17,8 @@
 
         // FADE IN EFFECT
         opacity: 0;
-        transform: translateY(5rem);
-        transition: .5s all;
+        transform: translateY(10rem);
+        transition: 1s all;
 
         &.active {
             opacity: 1;

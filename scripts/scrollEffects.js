@@ -62,7 +62,7 @@ window.addEventListener('scroll', debounce((e) => {
 function checkFade(e) {
     posts.forEach(post => {
         let fadeInAt = post.offsetTop;
-        if ((window.scrollY + window.innerHeight * 0.85) > fadeInAt) {
+        if ((window.scrollY + window.innerHeight * 0.75) > fadeInAt) {
             post.classList.add('active');
         }
     })
