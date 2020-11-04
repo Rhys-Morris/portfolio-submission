@@ -109,6 +109,8 @@
         flex-wrap: wrap;
 
         width: 100%;
+
+        margin-top: 5vh;
         
         
         &__project {
@@ -118,7 +120,7 @@
             height: 30rem;      // TEST
             background-position: center;
             background-size: cover;
-            border-radius: .5rem;
+            border-radius: 1rem;
             position: relative;
             margin: 1rem;
             transition: 2s all;
@@ -168,8 +170,40 @@
 
         }
 
+        &__card-reverse {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, $color-primary, $color-primary-faded);
+            clip-path: circle(5% at 95% 10%);
+            z-index: 10;
+            transition: .8s all ease;
+
+            &:hover {
+                clip-path: circle(75%);
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+
+                .work__projects__info {
+                    opacity: 0;
+                }
+
+                .work__projects__text-wrapper {
+                    opacity: 1; 
+                }
+            }
+        }
+
+        &__info {
+            position: absolute;
+            top: 21.0%;
+            right: 1.25%;
+            height: 3rem;
+            opacity: 1;
+            transition: .8s all ease;
+        }
+
         &__header {
-            padding: 2rem;
+            padding: 1.5rem;
             display: inline;
             font-size: 2rem;
             font-weight: 300;
@@ -180,14 +214,27 @@
             }
         }
 
-        &__text {
+        &__text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
             position: absolute;
-            width: 45%;
-            right: 4rem;
-            top: 35%;
-            font-size: 1.4rem;
+            left: 2rem;
+            top: 25%;
+            z-index: 15;
+            opacity: 0;
+            color: $color-bg;
+            font-size: 1.6rem;
+        }
+
+        &__text {
             padding: 2rem;
-            background-color: rgba(4, 7, 33, .8);
+        }
+
+        &__tools {
+            padding: 1rem;
+            font-family: 'Roboto Mono', monospace;
         }
 
         &__link-box {
@@ -197,6 +244,9 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            background-color: rgba(4, 7, 33, .8);
+            padding: .5rem;
+            z-index: 15;
         }
 
         &__link-icon {
