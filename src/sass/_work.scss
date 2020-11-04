@@ -125,8 +125,10 @@
             margin: 1.5rem;
             transition: .3s all;
 
-            &:hover {
-                transform: translateY(-.8rem);
+            @media screen and (min-width: $breakpoint3) {
+                &:hover {
+                    transform: translateY(-.8rem);
+                }
             }
 
             &--1 {

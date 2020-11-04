@@ -397,8 +397,8 @@ font-family: 'Roboto Mono', monospace;
 .blog__wrapper {
   margin-bottom: 10vh;
   opacity: 0;
-  transform: translateY(5rem);
-  transition: 0.5s all;
+  transform: translateY(10rem);
+  transition: 1s all;
 }
 .blog__wrapper.active {
   opacity: 1;
@@ -964,12 +964,20 @@ font-family: 'Roboto Mono', monospace;
     font-size: 1.6rem;
   }
 }
-.slideshow-container__post:hover .slideshow-container__post__header {
-  transform: translate(0);
-  opacity: 1;
+@media only screen and (max-width: 1200px) {
+  .slideshow-container__post__header {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.slideshow-container__post:hover {
-  transform: scale(1.03);
+@media only screen and (min-width: 1200px) {
+  .slideshow-container__post:hover .slideshow-container__post__header {
+    transform: translate(0);
+    opacity: 1;
+  }
+  .slideshow-container__post:hover {
+    transform: scale(1.03);
+  }
 }
 
 .scroll {
@@ -1586,8 +1594,10 @@ font-family: 'Roboto Mono', monospace;
   margin: 1.5rem;
   transition: 0.3s all;
 }
-.work__projects__project:hover {
-  transform: translateY(-0.8rem);
+@media screen and (min-width: 900px) {
+  .work__projects__project:hover {
+    transform: translateY(-0.8rem);
+  }
 }
 .work__projects__project--1 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("../src/img/todoproject.png");

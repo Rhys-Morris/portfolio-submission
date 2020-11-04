@@ -373,15 +373,22 @@
             @media only screen and (max-width: $breakpoint1) {
                 font-size: 1.6rem;
             }
+
+            @media only screen and (max-width: $breakpoint2) {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        &:hover .slideshow-container__post__header {
-            transform: translate(0);
-            opacity: 1;
-        }
-
-        &:hover {
-            transform: scale(1.03);
+        @media only screen and (min-width: $breakpoint2) {
+            &:hover .slideshow-container__post__header {
+                transform: translate(0);
+                opacity: 1;
+            }
+    
+            &:hover {
+                transform: scale(1.03);
+            }
         }
     }
 }
