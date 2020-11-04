@@ -2,6 +2,19 @@
 
 @import 'variables.scss';
 
+@mixin link_animated {
+    &::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        background-color: $color-primary;
+        transition: all .5s
+    }
+} 
+
 .about {
     display: flex;
     flex-direction: column;
@@ -74,6 +87,16 @@
 
         &__link {
             text-decoration: none;
+            color: $color-primary;
+            @include link_animated;
+            position: relative;
+            font-weight: bold;
+
+            &:hover {
+                &::after{
+                    width: 100%;
+                }
+            }
             
         }
     }
@@ -159,19 +182,12 @@
             color: $color-primary;
             position: relative;
             transition: .5s all;
+            @include link_animated;
 
             &:hover{
-                color: $color-primary-faded;
 
                 &::after {
-                    content: '';
-                    height: 2px;
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    background-color: $color-primary;
-                    animation: underline .3s ease-out;
-                    animation-fill-mode: forwards;
+                    width: 100%;
                 }
             }
         }

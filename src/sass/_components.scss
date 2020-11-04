@@ -161,17 +161,6 @@
     color: $color-primary;
     font-weight: bold;
     margin-right: .5rem;
-
-    &--2 {
-        @extend .hl;
-        margin-right: 0;
-        font-size: 105%;
-        transition: .2s all;
-
-        &:hover {
-            color: $color-primary-faded;
-        }
-    }
 }
 
 // CONTACT FORM 
@@ -367,9 +356,14 @@
             font-size: 2rem;
             top: 10%;
             left: 10%;
+            padding: 1rem;
+            background-color: rgba($color-bg, .8);
             font-weight: 300;
             text-transform: uppercase;
             transition: .2s all;
+            opacity: 0;
+            transform: translateY(-2rem);
+            transition: .3s;
 
             &:visited,
             &:active {
@@ -379,6 +373,15 @@
             @media only screen and (max-width: $breakpoint1) {
                 font-size: 1.6rem;
             }
+        }
+
+        &:hover .slideshow-container__post__header {
+            transform: translate(0);
+            opacity: 1;
+        }
+
+        &:hover {
+            transform: scale(1.03);
         }
     }
 }
@@ -396,7 +399,7 @@
 .post--5 {
     background-size: cover;
     background-position: center;
-    transition: 1s all ease-out;
+    transition: .5s all ease-out;
 }
 
 // INITIAL LOAD SET UP
@@ -415,30 +418,55 @@
 .post--1 {
     background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
     url('./img/blog-bootstrap-small.jpg');
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
+    url('./img/blog-bootstrap-small.jpg');
+    }
 }
 
 .post--2 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
+    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7), rgba(4, 7, 33, .6)),
     url('./img/blog-react-small.jpg');
     flex: 0;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
+    url('./img/blog-react-small.jpg');
+    }
 }
 
 .post--3 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
+    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7 ), rgba(4, 7, 33, .6)),
     url('./img/blog-animation-small.jpg');
-    flex: 0
+    flex: 0;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
+    url('./img/blog-animation-small.jpg');
+    }
 }
 
 .post--4 {
     background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
     url('./img/blog-resume-small.jpg');
     flex: 0;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
+    url('./img/blog-resume-small.jpg');
+    }
 }
 
 .post--5 {
     background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
     url('./img/blog-interview-small.jpg');
     flex: 0;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
+    url('./img/blog-interview-small.jpg');
+    }
 }
 
 // SLIDESHOW SELECTORS
