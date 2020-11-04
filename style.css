@@ -144,6 +144,22 @@ font-family: 'Roboto Mono', monospace;
 }
 .about__text__link {
   text-decoration: none;
+  color: #7accff;
+  position: relative;
+  font-weight: bold;
+}
+.about__text__link::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  background-color: #7accff;
+  transition: all 0.5s;
+}
+.about__text__link:hover::after {
+  width: 100%;
 }
 .about__photo {
   height: 45rem;
@@ -232,18 +248,18 @@ font-family: 'Roboto Mono', monospace;
   position: relative;
   transition: 0.5s all;
 }
-.about__blog__link:hover {
-  color: #bee6ff;
-}
-.about__blog__link:hover::after {
+.about__blog__link::after {
   content: "";
   height: 2px;
   position: absolute;
   bottom: -2px;
   left: 0;
+  width: 0;
   background-color: #7accff;
-  animation: underline 0.3s ease-out;
-  animation-fill-mode: forwards;
+  transition: all 0.5s;
+}
+.about__blog__link:hover::after {
+  width: 100%;
 }
 
 @keyframes dropdown {
@@ -352,14 +368,6 @@ font-family: 'Roboto Mono', monospace;
   100% {
     color: green;
     transform: rotate(0) scale(1);
-  }
-}
-@keyframes underline {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
   }
 }
 @keyframes ripple {
@@ -767,18 +775,10 @@ font-family: 'Roboto Mono', monospace;
   display: inline-block;
 }
 
-.hl, .hl--2 {
+.hl {
   color: #7accff;
   font-weight: bold;
   margin-right: 0.5rem;
-}
-.hl--2 {
-  margin-right: 0;
-  font-size: 105%;
-  transition: 0.2s all;
-}
-.hl--2:hover {
-  color: #bee6ff;
 }
 
 .form {
@@ -947,9 +947,14 @@ font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   top: 10%;
   left: 10%;
+  padding: 1rem;
+  background-color: rgba(4, 7, 33, 0.8);
   font-weight: 300;
   text-transform: uppercase;
   transition: 0.2s all;
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: 0.3s;
 }
 .slideshow-container__post__header:visited, .slideshow-container__post__header:active {
   color: #eee;
@@ -958,6 +963,13 @@ font-family: 'Roboto Mono', monospace;
   .slideshow-container__post__header {
     font-size: 1.6rem;
   }
+}
+.slideshow-container__post:hover .slideshow-container__post__header {
+  transform: translate(0);
+  opacity: 1;
+}
+.slideshow-container__post:hover {
+  transform: scale(1.03);
 }
 
 .scroll {
@@ -973,7 +985,7 @@ font-family: 'Roboto Mono', monospace;
 .post--5 {
   background-size: cover;
   background-position: center;
-  transition: 1s all ease-out;
+  transition: 0.5s all ease-out;
 }
 
 .header--1 {
@@ -990,25 +1002,40 @@ font-family: 'Roboto Mono', monospace;
 .post--1 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-bootstrap-small.jpg");
 }
+.post--1:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0.3)), url("./img/blog-bootstrap-small.jpg");
+}
 
 .post--2 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-react-small.jpg");
   flex: 0;
+}
+.post--2:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0.3)), url("./img/blog-react-small.jpg");
 }
 
 .post--3 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-animation-small.jpg");
   flex: 0;
 }
+.post--3:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0.3)), url("./img/blog-animation-small.jpg");
+}
 
 .post--4 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-resume-small.jpg");
   flex: 0;
 }
+.post--4:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0.3)), url("./img/blog-resume-small.jpg");
+}
 
 .post--5 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("./img/blog-interview-small.jpg");
   flex: 0;
+}
+.post--5:hover {
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.5), rgba(4, 7, 33, 0.3)), url("./img/blog-interview-small.jpg");
 }
 
 .slideshow-selectors {
