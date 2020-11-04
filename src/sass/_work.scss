@@ -178,6 +178,13 @@
             z-index: 10;
             transition: .8s all ease;
 
+            @media only screen and (max-width: $breakpoint8) {
+                clip-path: circle(75%);
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background: linear-gradient(to bottom, rgba(4, 7, 33, .2), rgba(4, 7, 33, .1))
+            }
+
             &:hover {
                 clip-path: circle(75%);
                 border-bottom-left-radius: 1rem;
@@ -200,6 +207,15 @@
             height: 3rem;
             opacity: 1;
             transition: .8s all ease;
+
+            @media only screen and (max-width: $breakpoint6) {
+                right: 1.1%;
+                top: 20.5%;
+            }
+
+            @media only screen and (max-width: $breakpoint8) {
+                display: none;
+            }
         }
 
         &__header {
@@ -225,7 +241,14 @@
             z-index: 15;
             opacity: 0;
             color: $color-bg;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+
+            @media only screen and (max-width: $breakpoint8) {
+                opacity: 1;
+                background-color: rgba(4, 7, 33, .8);
+                color: $color-font-primary;
+                font-size: 1.2rem;
+            }
         }
 
         &__text {

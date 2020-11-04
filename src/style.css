@@ -1620,6 +1620,14 @@ font-family: 'Roboto Mono', monospace;
   z-index: 10;
   transition: 0.8s all ease;
 }
+@media only screen and (max-width: 325px) {
+  .work__projects__card-reverse {
+    clip-path: circle(75%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(4, 7, 33, 0.2), rgba(4, 7, 33, 0.1));
+  }
+}
 .work__projects__card-reverse:hover {
   clip-path: circle(75%);
   border-bottom-left-radius: 1rem;
@@ -1638,6 +1646,17 @@ font-family: 'Roboto Mono', monospace;
   height: 3rem;
   opacity: 1;
   transition: 0.8s all ease;
+}
+@media only screen and (max-width: 500px) {
+  .work__projects__info {
+    right: 1.1%;
+    top: 20.5%;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .work__projects__info {
+    display: none;
+  }
 }
 .work__projects__header {
   padding: 1.5rem;
@@ -1662,7 +1681,15 @@ font-family: 'Roboto Mono', monospace;
   z-index: 15;
   opacity: 0;
   color: #040721;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 325px) {
+  .work__projects__text-wrapper {
+    opacity: 1;
+    background-color: rgba(4, 7, 33, 0.8);
+    color: #eee;
+    font-size: 1.2rem;
+  }
 }
 .work__projects__text {
   padding: 2rem;
