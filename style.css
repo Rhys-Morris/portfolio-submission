@@ -1583,34 +1583,23 @@ font-family: 'Roboto Mono', monospace;
   background-size: cover;
   border-radius: 1rem;
   position: relative;
-  margin: 1rem;
-  transition: 2s all;
+  margin: 1.5rem;
+  transition: 0.3s all;
+}
+.work__projects__project:hover {
+  transform: translateY(-0.8rem);
 }
 .work__projects__project--1 {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.7), rgba(4, 7, 33, 0.6)), url("../src/img/todoproject.png");
-  transition: 2s all;
-}
-.work__projects__project--1:hover {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)), url("../src/img/todoproject.png");
-  border: none;
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("../src/img/todoproject.png");
 }
 .work__projects__project--2 {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/connect4project.PNG");
-}
-.work__projects__project--2:hover {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)), url("../src/img/connect4project.PNG");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("../src/img/connect4project.PNG");
 }
 .work__projects__project--3 {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/tictactoe.PNG");
-}
-.work__projects__project--3:hover {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)), url("../src/img/tictactoe.PNG");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("../src/img/tictactoe.PNG");
 }
 .work__projects__project--4 {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.9), rgba(4, 7, 33, 0.8)), url("../src/img/calculator.PNG");
-}
-.work__projects__project--4:hover {
-  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)), url("../src/img/calculator.PNG");
+  background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("../src/img/calculator.PNG");
 }
 .work__projects__card-reverse {
   width: 100%;
