@@ -122,50 +122,31 @@
             background-size: cover;
             border-radius: 1rem;
             position: relative;
-            margin: 1rem;
-            transition: 2s all;
+            margin: 1.5rem;
+            transition: .3s all;
+
+            &:hover {
+                transform: translateY(-.8rem);
+            }
 
             &--1 {
-                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/todoproject.png');
-                transition: 2s all;
-
-                &:hover {
-                    background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)),
-                                      url('../src/img/todoproject.png');
-                    border: none;
-                }
             }
 
             &--2 {
-                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9  ), rgba(4, 7, 33, .8)),
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/connect4project.PNG');
-
-                &:hover {
-                    background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)),
-                                      url('../src/img/connect4project.PNG');
-
-                }
             }
 
             &--3 {
-                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9), rgba(4, 7, 33, .8)),
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/tictactoe.PNG');
-
-                &:hover {
-                    background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)),
-                                      url('../src/img/tictactoe.PNG');
-                }
             }
 
             &--4 {
-                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .9 ), rgba(4, 7, 33, .8)),
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/calculator.PNG');
-
-                &:hover {
-                    background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0)),
-                                      url('../src/img/calculator.PNG');
-                }
             }
 
         }
