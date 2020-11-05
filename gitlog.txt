@@ -1,0 +1,324 @@
+commit 79bccf57e2a19060f637fd77f12124461c7f560e
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 17:47:55 2020 +1100
+
+    Readme updated
+
+commit e81add65d00a5e7c83c60b993f49f5620586c218
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 17:46:40 2020 +1100
+
+    Readme updated
+
+commit 008348881b3a6ca4df73716eca7d1db6d147f7b6
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 17:40:35 2020 +1100
+
+    Readme updated
+
+commit b7dc37e7f6c1e52e0ae176f17e9592f80ac108f3
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 17:34:42 2020 +1100
+
+    Prefixed and minified css + SRI
+
+commit aec1d1ff9b14c0b122c84bf5bd199e2e5ba7a14f
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 14:47:16 2020 +1100
+
+    Padding improvements larger screens
+
+commit 420bde0e631ff75b5eebf7809a09b967f3346cf4
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 14:45:11 2020 +1100
+
+    Style fixes work page
+
+commit 4933e05bd3c6a9cd192e202cb7da20e5a6087f71
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 14:08:25 2020 +1100
+
+    Fixed typo
+
+commit 84e554c21d7b273c56874e8f0f01586ba3d25371
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 13:49:09 2020 +1100
+
+    Test background image
+
+commit 34656d0e086134f7b6e5e3c49f5d2120147005ab
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 13:44:56 2020 +1100
+
+    Readme update
+
+commit 88a60f0401dd16f892f341919da8cbbd9489d6bd
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 13:41:41 2020 +1100
+
+    Image fix
+
+commit 97a8e61d18ef9f63f6a7a8a1ecf756bae97be532
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 13:21:03 2020 +1100
+
+    Formatting changes
+
+commit 3c207da788aea03739804df58d2c8d847f72ab2f
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 11:45:41 2020 +1100
+
+    Minor style fixes
+
+commit c888672eaa1c0bd9e9f07c564981d63c7671870e
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 11:43:07 2020 +1100
+
+    Add social icon animations
+
+commit c92b55c6bb067f03f87120f9a17d89495eb9ce96
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 11:10:23 2020 +1100
+
+    Custom form validation styling
+
+commit 83b3f07b3632afd04a52e81f4caef363f43682af
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 10:15:21 2020 +1100
+
+    Change blog scroll in effect and slideshow changes
+
+commit e31b74c19b0c69f327a196c27a591242f042a410
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 09:59:54 2020 +1100
+
+    Background changes and pop up effect on project cards
+
+commit cd9552fd6b9a3bf5db67448d08986bd8112abf7a
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 09:55:12 2020 +1100
+
+    Responsive design for project cards
+
+commit a621ee942e4eaa1aa9801b1b62678ce600c73705
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Thu Nov 5 09:37:25 2020 +1100
+
+    Added info panels to project cards
+
+commit 55a22fa88110ca173d51538eb114fea17cfe95f8
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Wed Nov 4 21:34:27 2020 +1100
+
+    Animation improvements about section
+
+commit 290110421d77ce2fc831790d46104438c5fc0e33
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 12:23:42 2020 +1100
+
+    Increased ripple effect
+
+commit 9d988aa245e6c75295935371f4a33ff57f9aa0ae
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 12:21:40 2020 +1100
+
+    Text changes and error messages on form submit
+
+commit e15166f4819000a608aeee307a64334e73bea228
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 11:30:29 2020 +1100
+
+    Added resume and style changes
+
+commit 486b379cec95774a6c60ee6208775202326ba8dd
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 10:26:05 2020 +1100
+
+    readme changes
+
+commit e214c85b4b7917319ef6c7076bdd196ca56ed9a5
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 10:25:19 2020 +1100
+
+    Rollback ripple script changes + readme fleshed out
+
+commit 3db3f10a1d8a1fc7f1044f49f9f2fa4990160cbe
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 09:58:24 2020 +1100
+
+    ripple effect switched to touch event
+
+commit 8e9a79109fd2f20c7de0ad1feeae42260690961a
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Mon Nov 2 00:11:21 2020 +1100
+
+    Added ripple script on home
+
+commit c140136ed30884e7dacd35ebb9c669da45f221f4
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sun Nov 1 23:20:39 2020 +1100
+
+    Footer margin fix
+
+commit d976e29bf8a262065077c42928bc05e2fb2f15aa
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sun Nov 1 23:10:34 2020 +1100
+
+    Style and animation updates
+
+commit 97c70a5bfc5434d348c16d5735df5d6a97453c8c
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sun Nov 1 14:51:34 2020 +1100
+
+    View links for project cards
+
+commit e06e86e42fd602988eff232a8e5adeaf20ea4916
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 19:57:15 2020 +1100
+
+    Style changes and script functionality added
+
+commit 92a81e849e8ccbce198655ba88e975ea4bf1dfba
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 18:38:53 2020 +1100
+
+    Global rem change for max-height < 900px
+
+commit 07e2e317eb7c00cfaf5c683d9852a2767f64667e
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 18:32:48 2020 +1100
+
+    Form update
+
+commit 7fb5c0c671457b0bf70eb9336add3129115690ae
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 18:30:05 2020 +1100
+
+    Testing formspree form handling
+
+commit ef943cbfc4057b41204a3eed99119385c0937d8f
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 18:14:31 2020 +1100
+
+    Font size changes
+
+commit fee20125436ccd0efe2fa5b31c1c6e03bfe0b558
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 18:06:31 2020 +1100
+
+    Easter egg
+
+commit e610dd303c4370b874aa22b27901fb5d003b8a14
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 15:47:15 2020 +1100
+
+    about page style changes
+
+commit a385a39855da74a3d3024b1e2c4dd639df0bafd2
+Merge: bb531fa c131f87
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 13:51:37 2020 +1100
+
+    Pulled readme change
+
+commit bb531face102c9054360550424dc368bbdd7551d
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 13:49:35 2020 +1100
+
+    Style changes
+
+commit c131f872664d2cbc650bc0354560d5442321f306
+Author: Rhys Morris <Rhysmorris08@gmail.com>
+Date:   Sat Oct 31 13:48:12 2020 +1100
+
+    Update README.md
+
+commit faba0fbf4e75f4607874e9c681911608782606be
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 13:38:55 2020 +1100
+
+    Blog responsive
+
+commit 144812c794a399c762ba6aabf232f51920e81653
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 10:59:59 2020 +1100
+
+    Slideshow responsive
+
+commit d855ab2fc7c43bd16bf8e61998f3f5d5cd8fdebd
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 10:43:48 2020 +1100
+
+    Restructured file dirs and added blog post slideshow
+
+commit a962b8f9e850164bb3a799f1c978ef10877f9231
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Sat Oct 31 00:39:41 2020 +1100
+
+    Started implementing blog post slideshow
+
+commit bc26db4890d45def08b8d92b81ea6222ff673aa7
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 23:47:29 2020 +1100
+
+    Style change experience section
+
+commit d93309708abd2a9433401563e21eed505548c53a
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 23:45:21 2020 +1100
+
+    Footer style changes
+
+commit 233e3580c812ac31050e0de31e2c04e82b473109
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 21:57:46 2020 +1100
+
+    Removed min-height on about section
+
+commit a8d830fd777938a52379d7df8a3711972d2697c7
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 21:56:30 2020 +1100
+
+    Email style change
+
+commit 4a190d0ea11b4e5878fb1386e3b1470c531f3a1b
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 21:52:00 2020 +1100
+
+    FIxes for about section
+
+commit 0cb8238ee27d9322f74efd16ba7d9d98a3aaebdf
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 21:41:58 2020 +1100
+
+    about section responsive
+
+commit df1798cd5658ee70bad92b6c5e7b84629b50ae29
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 20:53:08 2020 +1100
+
+    Added About me and email to sidebar
+
+commit d0d87422464d55c43af745079eb5f7d3ec9fe589
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 20:06:07 2020 +1100
+
+    Experience page fully responsive
+
+commit 93746ae79d3ab9c2665ce1071544ef91586b32dd
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 19:44:27 2020 +1100
+
+    Fix nav bar and progress on experience page
+
+commit f309ce3b5cae912e8672875eecd6237c99503ea1
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 17:02:31 2020 +1100
+
+    Hero and contact corrected for single page
+
+commit c44fb88d1ae51ad79349d3bbd38d1c3276f60429
+Author: Rhys Morris <rhysmorris08@gmail.com>
+Date:   Fri Oct 30 15:33:10 2020 +1100
+
+    Local clone from portfolio-site - initial commit
