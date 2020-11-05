@@ -1,6 +1,6 @@
 ## Portfolio Site
 
-Deployed [**portfolio site**](https://optimistic-franklin-77a7e0.netlify.app/)
+Deployed [**portfolio site**](https://rhys-morris.github.io/portfolio-submission/)
 
 Github [**repository**](https://github.com/Rhys-Morris/portfolio-submission)
 
