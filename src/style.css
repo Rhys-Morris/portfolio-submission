@@ -1149,7 +1149,7 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
   width: 80%;
-  min-height: 77vh;
+  min-height: 76vh;
 }
 @media screen and (max-width: 1400px) {
   .contact {
@@ -1318,7 +1318,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .hero {
-  height: 77vh;
+  height: 76vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
