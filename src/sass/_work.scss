@@ -7,14 +7,14 @@
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    min-height: 78vh;       
+    min-height: 77vh;       
 
     @media only screen and (max-width: $breakpoint6) {
         width: 100%;
     }
 
     // Move up slighly on larger screens
-    @media only screen and (min-height: 1400px) {
+    @media only screen and (min-height: 1300px) {
         justify-content: flex-start;
     }
 

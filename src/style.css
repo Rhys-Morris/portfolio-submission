@@ -1118,6 +1118,11 @@ font-family: 'Roboto Mono', monospace;
   width: 80%;
   min-height: 76vh;
 }
+@media only screen and (min-height: 1300px) {
+  .contact {
+    justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 1400px) {
   .contact {
     width: 80%;
@@ -1500,14 +1505,14 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  min-height: 78vh;
+  min-height: 77vh;
 }
 @media only screen and (max-width: 500px) {
   .work {
     width: 100%;
   }
 }
-@media only screen and (min-height: 1400px) {
+@media only screen and (min-height: 1300px) {
   .work {
     justify-content: flex-start;
   }

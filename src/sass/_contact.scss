@@ -11,6 +11,11 @@
     width: 80%;
     min-height: 76vh;
 
+    // Move up slighly on larger screens
+    @media only screen and (min-height: 1300px) {
+            justify-content: flex-start;
+    }
+
     @media screen and (max-width: $breakpoint1) {
         width: 80%;
     }
