@@ -191,10 +191,6 @@
             color: $color-bg;
         }
 
-        &:invalid {
-            color: red;
-        }
-
         &:valid {
             color: $color-bg;
         }
@@ -235,6 +231,10 @@
             transform: translateY(-.5rem);
         }
     }
+}
+
+.invalid {
+    box-shadow: 0 0 .2rem .5rem red!important; 
 }
 
 // HANDLING FORM INPUT ERRORS

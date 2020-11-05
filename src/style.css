@@ -804,9 +804,6 @@ font-family: 'Roboto Mono', monospace;
 .form__input::placeholder, .form__textarea::placeholder {
   color: #040721;
 }
-.form__input:invalid, .form__textarea:invalid {
-  color: red;
-}
 .form__input:valid, .form__textarea:valid {
   color: #040721;
 }
@@ -842,6 +839,10 @@ font-family: 'Roboto Mono', monospace;
   background-color: #7accff;
   color: #040721;
   transform: translateY(-0.5rem);
+}
+
+.invalid {
+  box-shadow: 0 0 0.2rem 0.5rem red !important;
 }
 
 .error {
