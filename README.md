@@ -1,8 +1,8 @@
 ## Portfolio Site
 
-Deployed [**portfolio site**](https://rhys-morris.github.io/portfolio-submission/)
+Deployed [**portfolio site**](https://rhysmorrisdeveloper.netlify.app/).
 
-Github [**repository**](https://github.com/Rhys-Morris/portfolio-submission)
+Github [**repository**](https://github.com/Rhys-Morris/portfolio-submission).
 
 ### Website description
 
@@ -28,19 +28,21 @@ The target audience of this website is an employer looking to engage a web devel
     - Further CSS animation implementation utilising CSS Animations library
 - Contact section
     - Functional form submission via formspree
-    - Form validation with javascript
+    - Form validation styling with javascript
     - Embedded google map showing location, altered using CSS filters
 - Blog
     - Drop down navigation on scroll event
     - Scroll in blog posts
 - Other
     - Fully responsive design
-    - Hamburger navigation implementation on reduced width screens
+    - Hamburger navigation implementation on smaller screens
+    - Links to social media platforms
 
 ### Tech Stack
 
 - HTML 5
 - CSS 3
+- Sass
 - Git/Github version control
 - Node Package Manager
 - Javascript
