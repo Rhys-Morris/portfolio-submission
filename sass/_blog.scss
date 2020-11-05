@@ -12,10 +12,11 @@
         width: 100vw;
     }
 
+    // Wrapper for individual posts
     &__wrapper {
         margin-bottom: 10vh;
 
-        // FADE IN EFFECT
+        // Fade in effect on page scroll
         opacity: 0;
         transform: translateY(10rem);
         transition: 1s all;
@@ -26,6 +27,7 @@
         }
     }
 
+    // Blog posts
     &__post {
         height: 20vh;
         width: 100%;
@@ -49,6 +51,7 @@
             box-shadow: -.5rem 0 .5rem .5rem rgba($color-primary-faded, .3);
         }
 
+        // Post header
         &__header-box {
             position: absolute;
             top: 20%;
@@ -121,6 +124,7 @@
             }
         }
 
+        // Post content
         &__text {
             width: 100%;
             min-height: 60vh;
@@ -180,7 +184,7 @@
                 width: 30rem;
                 margin: 0 0 2rem 2rem;
             }
-
+            
             @media only screen and (max-width: $breakpoint5) {
                 float: none;
                 display: block;
@@ -206,6 +210,7 @@
         }
     }
 
+    // Footer style for blog only -- no sidenav
     &__footer {
         display: flex;
         flex-direction: column;

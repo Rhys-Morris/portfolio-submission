@@ -2,6 +2,7 @@
 
 @import 'variables.scss';
 
+// Animation for external links (underline)
 @mixin link_animated {
     &::after {
         content: '';
@@ -22,7 +23,6 @@
     align-items: center;
 
     width: 80%;
-    min-height: 60vh;   // Possibly remove
 
     &__header {
         padding-right: 5rem;
@@ -96,11 +96,11 @@
                 &::after{
                     width: 100%;
                 }
-            }
-            
+            }    
         }
     }
 
+    // PHOTO FRAME IS IN COMPONENTS 
     &__photo {
         height: 45rem;
         margin-left: 4rem;
@@ -130,22 +130,13 @@
         @media only screen and (max-width: $breakpoint7) {
             height: 25rem;
         }
-
+        
         &:hover {
-            filter: grayscale(0);
-        }
-
-        &::after {
-            content: "Hello";
-            display: block;
-            height: 30rem;
-            width: 10rem;
-            position: relative;
-            top: 40rem;
-            background-color: $color-primary;
+            filter: grayscale(0);   // Remove grayscale on hover
         }
     }
 
+    // BLOG SECTION
     &__blog {
         margin-top: 10rem;
         display: flex;

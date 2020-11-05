@@ -86,10 +86,11 @@
         }
     }
 
+    // Map style
     &__map {
         margin-left: 4rem;
         border-radius: .5rem;
-        filter: grayscale(1) sepia(30%) hue-rotate(180deg) saturate(300%);
+        filter: grayscale(1) sepia(30%) hue-rotate(180deg) saturate(300%);  // Turn blue
         transition: .5s all;
         width: 100%;
         align-self: start;
@@ -97,7 +98,7 @@
         top: 1rem;
         
         &:hover {
-            filter: none;
+            filter: none;   // Remove blue
         }
 
         @media screen and (max-width: $breakpoint2) {

@@ -1,5 +1,6 @@
 // ANIMATIONS
 
+// Drop in animation
 @keyframes dropdown {
     0% {
         transform: translateY(-100rem);
@@ -9,6 +10,7 @@
     }
 }
 
+// Fade in from below
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -20,6 +22,7 @@
     }
 }
 
+// Fade in from below -- wait
 @keyframes fadeInUp2 {
     0% {
         opacity: 0;
@@ -35,6 +38,7 @@
     }
 }
 
+// Fade in from above
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -50,6 +54,7 @@
     }
 }
 
+// Fade in from right
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -61,30 +66,7 @@
     }
 }
 
-@keyframes rubberband {
-    0% {
-        transform: scale3d(1, 1, 1)
-    }
-    30% {
-        transform: scale3d(1.25, 0.75, 1)
-    }
-    40% {
-        transform: scale3d(0.75, 1.25, 1)
-    }
-    50% {
-        transform: scale3d(1.15, 0.85, 1)
-    }
-    65% {
-        transform: scale3d(0.95, 1.05, 1)
-    }
-    75% {
-        transform: scale3d(1.05, 0.95, 1)
-    }
-    100% {
-        transform: scale3d(1, 1, 1)
-    }
-}
-
+// Easter egg animation
 @keyframes easterEgg {
     0% {
         color: yellow;
@@ -121,6 +103,7 @@
     }
 }
 
+// Ripple effect for hero page on click events
 @keyframes ripple {
     from {
         height: 0;

@@ -23,7 +23,8 @@
     @media only screen and (max-width: 370px) {
         justify-content: center;
     }
-
+    
+    // Wrapper for text
     &__box {
         width: 90vw;
         display: flex;
@@ -36,11 +37,13 @@
         }
     }
     
+    // Built by text
     &__note {
         font-family: 'Roboto Mono', monospace;
         font-size: 1rem;  
     };
 
+    // Email text
     &__email {
         font-size: 1rem;
         letter-spacing: 2px;
