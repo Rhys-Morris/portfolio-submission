@@ -1500,11 +1500,16 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  min-height: 75vh;
+  min-height: 78vh;
 }
 @media only screen and (max-width: 500px) {
   .work {
     width: 100%;
+  }
+}
+@media only screen and (min-height: 1400px) {
+  .work {
+    justify-content: flex-start;
   }
 }
 .work__header {
@@ -1611,11 +1616,6 @@ font-family: 'Roboto Mono', monospace;
   position: relative;
   margin: 1.5rem;
   transition: 0.3s all;
-}
-@media screen and (min-width: 900px) {
-  .work__projects__project:hover {
-    transform: translateY(-0.8rem);
-  }
 }
 .work__projects__project--1 {
   background-image: linear-gradient(to bottom, rgba(4, 7, 33, 0.3), rgba(4, 7, 33, 0.1)), url("./img/todoproject.jpg");
