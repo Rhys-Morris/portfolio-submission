@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/scripts/index.js",
+    entry: "./src/style.css",
     output: {
-        filename: "main.min.js",
+        filename: "style.prefix.css",
         path: path.join(__dirname, "src")
     },
     module: {
@@ -17,6 +17,10 @@ module.exports = {
                   presets: ['@babel/preset-env']
                 }
               }
+            },
+            {
+              test: /\.css$/,
+              use: ["style-loader", "css-loader", "postcss-loader"]
             }
         ]
     }

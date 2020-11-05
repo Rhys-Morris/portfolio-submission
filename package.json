@@ -4,11 +4,9 @@
   "description": "Portfolio Rhys Morris",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass:watch": "sass ./src/sass/style.scss ./src/style.css --watch",
-    "webpack:watch": "webpack --watch",
-    "webpack:build": "npx webpack",
-    "autoprefix-css": "npx postcss ./src/style.css --use autoprefixer -d ./src/style.prefix.css"
+    "css:autoprefix": "postcss --use autoprefixer -b 'last 10 versions' ./src/style.css -o ./src/style.prefix.css",
+    "css:compress": "node-sass ./src/style.prefix.css ./src/style.min.css --output-style compressed" 
   },
   "repository": {
     "type": "git",
@@ -27,7 +25,7 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "autoprefixer": "^10.0.1",
-    "babel-loader": "^8.1.0",
+    "node-sass": "^5.0.0",
     "postcss": "^8.1.4",
     "postcss-cli": "^8.2.0",
     "webpack": "^5.3.0",
