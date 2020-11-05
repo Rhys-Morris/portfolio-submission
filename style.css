@@ -685,6 +685,57 @@ font-family: 'Roboto Mono', monospace;
 .socials__item {
   list-style: none;
   margin-bottom: 2rem;
+  border: 1px solid #7accff;
+  padding: 0.5rem;
+  transition: 1s;
+  z-index: 0;
+  width: 4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .socials__item {
+    padding: 0;
+    border: none;
+  }
+}
+.socials__item::after, .socials__item::before {
+  content: "";
+  position: absolute;
+  background-color: #040721;
+  z-index: -1;
+  transition: 0.8s;
+}
+@media screen and (max-width: 900px) {
+  .socials__item::after, .socials__item::before {
+    display: none;
+  }
+}
+.socials__item::after {
+  height: 4.5rem;
+  width: 3rem;
+}
+.socials__item::before {
+  width: 5rem;
+  height: 3rem;
+}
+.socials__item:hover::after {
+  width: 0;
+}
+.socials__item:hover::before {
+  height: 0;
+}
+.socials__item:hover {
+  background: #eee;
+  border: 1px solid #eee;
+}
+@media screen and (max-width: 900px) {
+  .socials__item:hover {
+    background: none;
+    border: none;
+  }
 }
 @media only screen and (max-width: 900px) {
   .socials__item {
@@ -692,7 +743,13 @@ font-family: 'Roboto Mono', monospace;
   }
 }
 .socials__icon {
-  width: 2.2rem;
+  z-index: 10;
+  width: 2.5rem;
+}
+@media screen and (max-width: 400px) {
+  .socials__icon {
+    margin: 0 1rem;
+  }
 }
 
 .frame {
