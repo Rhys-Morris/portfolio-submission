@@ -57,6 +57,6 @@ send.addEventListener('click', (e) => {
         name.classList.remove('invalid');
         email.classList.remove('invalid')
         message.classList.remove('invalid');
-    }, 5000)
+    }, 4000)
 
 })
