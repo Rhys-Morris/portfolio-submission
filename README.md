@@ -7,8 +7,8 @@ Github [**repository**](https://github.com/Rhys-Morris/portfolio-submission).
 ### Website description
 
 This website was designed and built to:
-1. Serve as a portfolio showcase
-2.  Demonstrate my technical and professional skillset as a web developer.
+1.  Demonstrate my technical and professional skillset as a web developer.
+2.  Serve as a portfolio showcase that can be expanded upon as I progress through the Coder Academy course.
 
 The target audience of this website is an employer looking to engage a web developer.
 
