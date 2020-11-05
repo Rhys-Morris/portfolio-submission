@@ -37,6 +37,7 @@ The target audience of this website is an employer looking to engage a web devel
     - Fully responsive design
     - Hamburger navigation implementation on smaller screens
     - Links to social media platforms
+    - Easter egg!
 
 ### Tech Stack
 
