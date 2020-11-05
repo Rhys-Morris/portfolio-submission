@@ -1,7 +1,6 @@
-// SOCIAL BAR
-
 @import 'variables.scss';
 
+// SOCIAL LINKS
 .socials {
     display: flex;
     flex-direction: column;
@@ -50,6 +49,7 @@
         }
     }
 
+    // Wrapper for social icons + animation
     &__item {
         list-style: none;
         margin-bottom: 2rem; 
@@ -113,6 +113,7 @@
         }
     }
 
+    // SVG ICONS
     &__icon {
         z-index: 10;
         width: 2.5rem;
@@ -291,10 +292,6 @@
     }
 }
 
-.invalid {
-    box-shadow: 0 0 .2rem .5rem red!important; 
-}
-
 // HANDLING FORM INPUT ERRORS
 
 .error {
@@ -309,6 +306,10 @@
     color: red;
     font-size: 1.4rem;
     padding: 0 .5rem;
+}
+
+.invalid {
+    box-shadow: 0 0 .2rem .5rem red!important; 
 }
 
 // ID ELEMENTS FOR FORM

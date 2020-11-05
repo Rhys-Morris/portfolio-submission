@@ -2,6 +2,13 @@
 
 @import 'variables.scss';
 
+// Fixed nav for blog section scrolling
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -58,6 +65,7 @@
         }
     }
 
+    // Link styling
     &__link:visited,
     &__link {
         color: $color-font-primary;
@@ -80,13 +88,14 @@
         }
     }
 
-
+    // Underline link on hover
     &__link:hover,
     &__link:active {
         border-bottom: 2px solid $color-primary;
     }
 }
 
+// Resume button
 .resume {
     font-size: 1.6rem;
     padding: 1rem 2rem;

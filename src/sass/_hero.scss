@@ -16,9 +16,11 @@
         height: 61vh;
     }
 
+    //Hero title
     &__title {
         font-size: 5rem;
 
+        // Colour name
         &--name {
             color: $color-primary;
         }
@@ -45,6 +47,7 @@
         }
     }
 
+    // Custom font for developer --> line padded to right
     &__dev {
         font-family: 'Dancing Script', cursive;
         font-size: 8rem;
@@ -76,14 +79,7 @@
         align-items: center;
     }
 
-    &__img {
-        height: 25rem;
-        border-radius: 10%;
-        border: 4px solid $color-primary;
-        margin-right: 10rem;
-        align-self: flex-start;
-    }
-
+    // Hero text caption
     &__text {
         font-size: 1.6rem;
         font-weight: 300;
@@ -101,12 +97,14 @@
         }
     }
 
+    // Contact me button
     &__button {
         align-self: flex-start;
         text-decoration: none;
     }
 }
 
+// Ripple effect on click events
 .ripple {
     background: rgba(#fff, 0);
     border: 3px solid $color-primary;

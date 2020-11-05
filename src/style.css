@@ -75,7 +75,6 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
   width: 80%;
-  min-height: 60vh;
 }
 .about__header {
   padding-right: 5rem;
@@ -199,15 +198,6 @@ font-family: 'Roboto Mono', monospace;
 .about__photo:hover {
   filter: grayscale(0);
 }
-.about__photo::after {
-  content: "Hello";
-  display: block;
-  height: 30rem;
-  width: 10rem;
-  position: relative;
-  top: 40rem;
-  background-color: #7accff;
-}
 .about__blog {
   margin-top: 10rem;
   display: flex;
@@ -316,29 +306,6 @@ font-family: 'Roboto Mono', monospace;
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-@keyframes rubberband {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes easterEgg {
@@ -898,10 +865,6 @@ font-family: 'Roboto Mono', monospace;
   transform: translateY(-0.5rem);
 }
 
-.invalid {
-  box-shadow: 0 0 0.2rem 0.5rem red !important;
-}
-
 .error {
   color: red;
   font-size: 1.4rem;
@@ -912,6 +875,10 @@ font-family: 'Roboto Mono', monospace;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+}
+
+.invalid {
+  box-shadow: 0 0 0.2rem 0.5rem red !important;
 }
 
 #subject {
@@ -1260,12 +1227,6 @@ font-family: 'Roboto Mono', monospace;
   }
 }
 
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .footer {
   margin-top: 5vh;
   display: flex;
@@ -1396,13 +1357,6 @@ font-family: 'Roboto Mono', monospace;
   justify-content: space-between;
   align-items: center;
 }
-.hero__img {
-  height: 25rem;
-  border-radius: 10%;
-  border: 4px solid #7accff;
-  margin-right: 10rem;
-  align-self: flex-start;
-}
 .hero__text {
   font-size: 1.6rem;
   font-weight: 300;
@@ -1435,6 +1389,12 @@ font-family: 'Roboto Mono', monospace;
   pointer-events: none;
   animation: ripple 2s linear;
   animation-fill-mode: backwards;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav {
@@ -1540,7 +1500,7 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  min-height: 60vh;
+  min-height: 75vh;
 }
 @media only screen and (max-width: 500px) {
   .work {

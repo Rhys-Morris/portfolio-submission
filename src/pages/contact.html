@@ -10,6 +10,7 @@
 </head>
 <body>
     <header class="index__header">
+        <!-- Navbar -->
         <nav class="nav">
             <div class="hamburger-div">
                 <div class="hamburger-line hamburger-line--1"></div>
@@ -17,7 +18,7 @@
                 <div class="hamburger-line hamburger-line--3"></div>
             </div>
             <ul class="nav__list">
-                <li class="nav__item"><a href="../../index.html" class="nav__link drop-in"><span class="hl">01.</span>Home</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link drop-in"><span class="hl">01.</span>Home</a></li>
                 <li class="nav__item"><a href="./about.html" class="nav__link drop-in--2"><span class="hl">02.</span>About</a></li>
                 <li class="nav__item"><a href="./experience.html" class="nav__link drop-in--3"><span class="hl">03.</span>Work</a></li>
                 <li class="nav__item"><a href="./contact.html" class="nav__link drop-in--4 nav__link--current-page"><span class="hl">04.</span>Contact</a></li>
@@ -27,8 +28,11 @@
     </header>
     <main class="index__main">
     <section class="contact" id="contact">
+        <!-- COntact header -->
         <h2 class="header-2 contact__header"><span class="header-2--numeral">04.</span>Contact</h2>
+        <!-- Form and map wrapper -->
         <div class="contact__form-map-wrapper">
+            <!-- Contact form -->
             <form action="https://formspree.io/f/xwkwborr" method="POST" class="contact__section__form form">
                 <p class="contact__text">Do you have a question, work opportunity or just want to say hi? Drop me a message, my inbox is always open!</p>
                 <label for="name" class="form__label">Name</label>
@@ -41,6 +45,7 @@
                 <div class="error-box">
                     <input type="submit" class="form__submit" value="Send">
                 </div>            </form>
+                <!-- Location map -->
             <div class="contact__map-box">
                 <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101218.4837510906!2d144.6364502967008!3d-37.553235070545426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f9776c84f27b%3A0x5045675218cce30!2sSunbury%20VIC%203429!5e0!3m2!1sen!2sau!4v1603930070956!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="contact__map-box__text">Where I'm Located<div>
@@ -49,6 +54,7 @@
     </section>
     </main>
     <footer class="footer">
+        <!-- Social links -->
         <section class="socials">
             <p class="socials__text">get in touch<p>
                 <div class="socials__box">
@@ -57,11 +63,13 @@
                     <li class="socials__item"><a href="https://www.linkedin.com/in/rhys-morris-37ba241b9/" class="socials__link"><img src="../img/459-linkedin2.svg" alt="linkedin-icon-link" class="socials__icon"></a></li>
                 </div>
         </section>
+        <!-- Footer text -->
         <div class="footer__box">
             <p class="footer__email">rhysmorris08@gmail.com</p>
             <p class="footer__note">Built by Rhys Morris 2020</p>
         </div>
     </footer>
+    <!-- Scripts -->
     <script src="../scripts/formValidation.js"></script>
     <script src="../scripts/hamburger.js"></script>
 </body>

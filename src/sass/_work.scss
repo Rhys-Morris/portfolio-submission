@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    min-height: 60vh;       // Possibly remove
+    min-height: 75vh;       // Possibly remove
 
     @media only screen and (max-width: $breakpoint6) {
         width: 100%;
@@ -44,6 +44,7 @@
         }
     }
 
+    // Box for language, tool icons
     &__languages {
         display: flex;
         justify-content: space-around;
@@ -85,6 +86,7 @@
             text-align: center;
         }
 
+        // Language icons
         &__icon {
 
             &-box {
@@ -101,6 +103,7 @@
         }
     }
 
+    // PROJECT SECTION
     &__projects {
 
         display: flex;
@@ -112,12 +115,12 @@
 
         margin-top: 5vh;
         
-        
+        // Project Cards
         &__project {
             display: flex;
             flex-direction: column;
             width: 40rem;
-            height: 30rem;      // TEST
+            height: 30rem;      
             background-position: center;
             background-size: cover;
             border-radius: 1rem;
@@ -131,6 +134,7 @@
                 }
             }
 
+            // Background images for individual project cards
             &--1 {
                 background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/todoproject.png');
@@ -150,9 +154,9 @@
                 background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
                                   url('../src/img/calculator.PNG');
             }
-
         }
 
+        // Information on each project - appear on info icon hover
         &__card-reverse {
             width: 100%;
             height: 100%;
@@ -181,8 +185,9 @@
                     opacity: 1; 
                 }
             }
-        }
+        }  
 
+        // Info icon - hover to reveal information on project
         &__info {
             position: absolute;
             top: 21.0%;
@@ -201,6 +206,7 @@
             }
         }
 
+        // Project header
         &__header {
             padding: 1.5rem;
             display: inline;
@@ -213,6 +219,7 @@
             }
         }
 
+        // Wrapper for project information
         &__text-wrapper {
             display: flex;
             flex-direction: column;
@@ -243,6 +250,7 @@
             font-family: 'Roboto Mono', monospace;
         }
 
+        // Links to Github and deployed project
         &__link-box {
             position: absolute;
             bottom: 1rem;
