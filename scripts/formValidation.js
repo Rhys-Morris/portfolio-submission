@@ -7,7 +7,11 @@ const message = document.getElementById('message');
 const send = document.querySelector('.form__submit');
 const target = document.querySelector('.error-box');
 
+errorMessageAlready = false;
+
 send.addEventListener('click', (e) => {
+    if (errorMessageAlready) { return }
+
     const errorMessage = document.createElement('span');
     errorMessage.className = 'error';
     let errorText = '';
@@ -22,8 +26,37 @@ send.addEventListener('click', (e) => {
         errorText = 'Invalid email address!'
     }
 
-    // Add error message to DOM
-    errorMessage.textContent = errorText;
-    target.appendChild(errorMessage);
+    // Check form validity and add error message to DOM
+    if (!name.validity.valid || !email.validity.valid || !message.validity.valid) {
+        errorMessage.textContent = errorText;
+        target.appendChild(errorMessage);
+        errorMessageAlready = true;
+        e.preventDefault()
+    } else {
+        return
+    }
+
+    // Style invalid elements
+
+    if (!name.validity.valid) {
+        name.classList.add('invalid');
+    }
+
+    if (!message.validity.valid) {
+        message.classList.add('invalid');
+    }
+
+    if (!email.validity.valid) {
+        email.classList.add('invalid');
+    }
+
+    // Remove invalid styling and error message
+    setTimeout(() => {
+        errorMessage.remove()
+        errorMessageAlready = false;
+        name.classList.remove('invalid');
+        email.classList.remove('invalid')
+        message.classList.remove('invalid');
+    }, 5000)
 
 })
