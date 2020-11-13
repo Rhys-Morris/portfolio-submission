@@ -1,4 +1,6 @@
-## Portfolio Site
+## Rhys Morris Portfolio Site
+
+![Deployed hero page](./docs/website-hero.png)
 
 Deployed [**portfolio site**](https://rhysmorrisdeveloper.netlify.app/).
 
@@ -47,6 +49,7 @@ The target audience of this website is an employer looking to engage a web devel
 - Git/Github version control
 - Node Package Manager
 - Javascript
+- Deployment via Netlify
 
 ### Sitemap
 
@@ -59,17 +62,20 @@ The target audience of this website is an employer looking to engage a web devel
 #### Hero section
 
 ![Desktop hero wireframe](./docs/hero-desktop.png)
+![Ipad hero wireframe](./docs/hero-ipad.png)
 ![Mobile hero wireframe](./docs/hero-mobile.png)
 ![Mobile hamburger nav](./docs/drop-down-nav.png)
 
 #### About section
 
 ![Desktop about wireframe](./docs/about-desktop-1.png)
+![Ipad about wireframe](./docs/about-ipad.png)
 ![Mobile about wireframe](./docs/about-mobile.png)
 
 #### Work section
 
 ![Desktop work wireframe](./docs/experience-desktop.png)
+![Ipad work wireframe](./docs/work-ipad.png)
 ![Mobile work wireframe](./docs/experience-mobile.png)
 
 #### Contact section
@@ -81,4 +87,5 @@ The target audience of this website is an employer looking to engage a web devel
 #### Blog section
 
 ![Desktop blog wireframe](./docs/blog-desktop.png)
+![Ipad blog wireframe](./docs/blog-ipad.png)
 ![Mobile blog wireframe](./docs/blog-mobile.png)
